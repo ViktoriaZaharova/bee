@@ -157,7 +157,8 @@ input, textarea, select {
   font-family: "Mont", sans-serif;
   color: #999999;
   font-size: 13px;
-  width: 100%; }
+  width: 100%;
+  box-shadow: none; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
     color: #999999; }
   input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
@@ -318,15 +319,20 @@ h3 {
   font-size: 20px; }
 
 .box-text {
-  color: #777777;
   line-height: 1.57; }
   .box-text p {
     margin: 0 0 25px; }
     .box-text p:last-child {
       margin: 0; }
 
-.list-dots {
-  list-style-type: disc; }
+.list-dots li::before {
+  display: inline-block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #777777;
+  margin: 0 9px 0 0; }
 
 header {
   margin: 0 0 30px; }
@@ -514,6 +520,11 @@ header {
     color: #777777; }
   .phone-wrapper .phone:last-child::after {
     display: none; }
+  .phone-wrapper .svg-icon {
+    margin: 0 7px 0 0;
+    width: 16px;
+    height: 16px;
+    fill: #999; }
 
 .phone {
   color: #fff;
@@ -647,7 +658,8 @@ header {
 
 .card {
   background: #fff;
-  width: 280px;
+  max-width: 280px;
+  width: 100%;
   height: 480px;
   position: relative;
   display: -webkit-box;
@@ -827,20 +839,200 @@ header {
 .slick-next {
   right: -21px; }
 
-.section-about {
-  color: #777; }
-  .section-about .container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .section-about h2 {
-    margin: 0 0 43px; }
-  .section-about h3 {
-    margin: 0 0 49px; }
-  .section-about .box-text {
-    margin: 0 0 46px; }
-    .section-about .box-text:last-child {
+.section-about .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.section-about h2 {
+  margin: 0 0 43px; }
+
+.section-about h3 {
+  margin: 0 0 46px; }
+
+.section-about h4 {
+  margin: 0 0 44px;
+  font-size: 24px; }
+
+.section-about .box-text {
+  color: #777;
+  margin: 0 0 30px; }
+  .section-about .box-text:last-child {
+    margin: 0; }
+
+.section-about ul {
+  color: #777;
+  line-height: 2.14;
+  margin: 0 0 26px; }
+
+.section-about__box {
+  width: 48.5%; }
+
+.brands-section {
+  margin: 93px 0 110px; }
+
+.brands-slider__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px; }
+  .brands-slider__box img {
+    max-height: 100%; }
+
+footer {
+  padding: 54px 0 0;
+  color: #fff;
+  background: #272b2e; }
+  footer h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 20px; }
+  footer .list-social {
+    margin: 16px 0 27px; }
+  footer .links-call {
+    display: none; }
+  footer .header-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 14px;
+    margin: 0 93px 0 auto; }
+  footer .mail {
+    margin: 0 98px 0 0; }
+  footer .logo {
+    max-width: 80px; }
+
+.footer-bottom {
+  background: #22272a;
+  padding: 16px 0; }
+
+.copyright {
+  margin: 0 auto;
+  font-size: 13px; }
+
+.footer-wrapper__bottom {
+  padding: 20px 0 22px;
+  border-top: 1px solid rgba(249, 249, 249, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.footer-wrapper__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 48px; }
+
+.footer-menu {
+  line-height: 2.14; }
+  .footer-menu li a {
+    color: #c7c7c7; }
+    .footer-menu li a:hover {
+      color: #f9d251; }
+
+.column-count {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2; }
+
+.list-payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-payment li {
+    margin: 0 14px 0 0; }
+    .list-payment li:last-child {
       margin: 0; }
+
+.mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff; }
+  .mail:hover {
+    color: #f9d251; }
+  .mail .svg-icon {
+    width: 16px;
+    height: 12px;
+    fill: #999;
+    margin: 0 8px 0 0; }
+
+.box-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .box-subscribe h3 {
+    white-space: nowrap;
+    margin: 0 23px 0 0; }
+
+.form-subscribe {
+  width: 290px;
+  position: relative; }
+  .form-subscribe label {
+    width: 100%; }
+  .form-subscribe input {
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    background: transparent;
+    padding: 0 36px 0 20px;
+    color: #fff; }
+    .form-subscribe input::-webkit-input-placeholder {
+      color: #999999; }
+    .form-subscribe input::-moz-placeholder {
+      color: #999999; }
+    .form-subscribe input::-ms-input-placeholder {
+      color: #999999; }
+    .form-subscribe input::placeholder {
+      color: #999999; }
+    .form-subscribe input:required:valid {
+      color: #fff; }
+  .form-subscribe button {
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+    .form-subscribe button svg {
+      fill: #fff; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

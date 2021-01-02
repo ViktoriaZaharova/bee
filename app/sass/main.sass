@@ -104,6 +104,7 @@ input, textarea, select
 	color: $input
 	font-size: 13px
 	width: 100%
+	box-shadow: none
 	&::placeholder
 		color: $input
 
@@ -222,7 +223,6 @@ h3
 	font-size: 20px
 
 .box-text
-	color: #777777
 	line-height: 1.57
 	p
 		margin: 0 0 25px
@@ -230,7 +230,15 @@ h3
 			margin: 0	
 
 .list-dots
-	list-style-type: disc				
+	li
+		&::before
+			display: inline-block
+			content: ''
+			width: 6px
+			height: 6px
+			border-radius: 50%
+			background: #777777		
+			margin: 0 9px 0 0
 
 // header
 header
@@ -370,6 +378,11 @@ header
 		&:last-child
 			&::after
 				display: none	
+	.svg-icon
+		margin: 0 7px 0 0
+		width: 16px
+		height: 16px
+		fill: #999			
 
 .phone
 	color: #fff
@@ -471,7 +484,8 @@ header
 // .products-slider
 .card
 	background: #fff
-	width: 280px
+	max-width: 280px
+	width: 100%
 	height: 480px
 	position: relative
 	display: flex
@@ -601,18 +615,143 @@ header
 
 // .section-about
 .section-about
-	color: #777
 	.container
 		justify-content: space-between
 	h2
 		margin: 0 0 43px
 	h3
-		margin: 0 0 49px
-	.box-text
 		margin: 0 0 46px
+	h4
+		margin: 0 0 44px
+		font-size: 24px	
+	.box-text
+		color: #777
+		margin: 0 0 30px
 		&:last-child
-			margin: 0			
+			margin: 0
+	ul
+		color: #777		
+		line-height: 2.14		
+		margin: 0 0 26px
 
+.section-about__box
+	width: 48.5%	
+
+// brands-section
+.brands-section
+	margin: 93px 0 110px		
+
+.brands-slider__box
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 70px
+	img
+		max-height: 100%			
+
+// footer
+footer
+	padding: 54px 0 0
+	color: #fff
+	background: $header-bg
+	h3
+		font-size: 16px
+		font-weight: bold
+		margin: 0 0 20px
+	.list-social
+		margin: 16px 0 27px	
+	.links-call
+		display: none	
+	.header-box
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		font-size: 14px
+		margin: 0 93px 0 auto
+	.mail
+		margin: 0 98px 0 0
+	.logo
+		max-width: 80px	
+
+.footer-bottom
+	background: $footer-bg	
+	padding: 16px 0
+
+.copyright
+	margin: 0 auto
+	font-size: 13px	
+
+.footer-wrapper__bottom
+	padding: 20px 0 22px
+	border-top: 1px solid rgba(#f9f9f9, .15)
+	@include box-wrapper	
+
+.footer-wrapper__top
+	@include box-wrapper2	
+	padding: 0 0 48px	
+
+.footer-menu
+	line-height: 2.14
+	li
+		a
+			color: #c7c7c7	
+			&:hover
+				color: $accent
+
+.column-count
+	column-count: 2		
+
+.list-payment
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	li
+		margin: 0 14px 0 0
+		&:last-child
+			margin: 0				
+
+.mail
+	display: flex
+	align-items: center
+	color: #fff
+	&:hover
+		color: $accent
+	.svg-icon
+		width: 16px
+		height: 12px
+		fill: #999
+		margin: 0 8px 0 0	
+
+.box-subscribe
+	display: flex
+	align-items: center
+	h3
+		white-space: nowrap
+		margin: 0 23px 0 0
+
+.form-subscribe
+	width: 290px
+	position: relative
+	label
+		width: 100%
+	input
+		border: solid 1px rgba(#ffffff, .15)
+		background: transparent	
+		padding: 0 36px 0 20px
+		color: #fff
+		&::placeholder
+			color: #999999
+		&:required:valid
+			color: #fff
+	button
+		width: 20px
+		height: 16px
+		position: absolute
+		right: 16px
+		top: 50%
+		transform: translate(0,-50%)
+		svg
+			fill: #fff					
 
 @import "media"
 // Всегда в конце
