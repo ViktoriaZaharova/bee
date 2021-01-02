@@ -138,17 +138,25 @@ button
 	text-align: center
 	height: 50px
 	font-weight: 600
+	max-width: 160px
+	width: 100%	
 
 .btn-accent
 	background: $accent
 	color: $text
-
+	&:hover
+		background: $text
+		color: $accent
 
 .color-yellow
 	color: $accent	
 
 .color-light-grey
 	color: #777777	
+
+a.color-light-grey
+	&:hover
+		color: $accent	
 
 .text-decoration
 	text-decoration: underline	
@@ -198,8 +206,35 @@ button
 	max-width: 104px
 	width: 100%
 
+.line-title
+	@include box-wrapper
+	width: 100%
+	border-bottom: 1px solid #e7e7e7
+	padding: 0 0 16px
+	margin: 0 0 11px	
+
+h2
+	font-size: 26px
+	font-weight: 900
+
+h3
+	font-weight: 900
+	font-size: 20px
+
+.box-text
+	color: #777777
+	line-height: 1.57
+	p
+		margin: 0 0 25px
+		&:last-child
+			margin: 0	
+
+.list-dots
+	list-style-type: disc				
+
 // header
 header
+	margin: 0 0 30px
 	.logo
 		margin: 0 auto
 
@@ -342,8 +377,242 @@ header
 	&:hover
 		color: $accent
 			
-.home-main
-	
+// .main-home
+.main-home
+	margin: 0 0 69px
+
+.home-main__slider
+	.slide
+		position: relative
+		min-height: 551px
+		padding: 116px 20px 20px 390px
+
+.main-home__bg
+	@include img-100
+	@include position-absolute-center	
+
+.slick-slide
+	outline: none
+
+.slick-dotted.slick-slider
+	margin-bottom: 0	
+
+.slick-dots
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	bottom: 31px
+	box-sizing: border-box
+	li
+		width: 20px
+		height: 20px
+		border-radius: 50%
+		position: relative
+		border: 2px solid transparent
+		transition: .3s ease
+		&::before
+			content: ''
+			border-radius: 50%
+			transition: .3s ease
+			width: 8px
+			height: 8px
+			background: #aaaaaa
+			@include position-absolute-center
+		button
+			display: none		
+	.slick-active
+		border-color: $accent
+		&::before
+			background: $accent			
+
+.main-home__content
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	h3
+		text-transform: uppercase
+		font-size: 30px
+		font-weight: bold	
+		padding: 0 0 0 50px
+	p
+		font-size: 25px
+		font-weight: 600	
+	.btn
+		margin: 35px 0 0
+
+.main-home__sales
+	display: flex
+	align-items: center
+	margin: 29px 0
+
+.main-home__sales-before
+	font-size: 22px
+	font-weight: 600
+	text-align: center
+	border-bottom: 12px solid $accent
+	padding: 0 10px	
+	margin: -40px 1px 0 0
+
+.main-home__sales-value
+	color: $accent	
+	font-size: 140px
+	font-weight: 900
+	display: flex
+	align-items: flex-end
+	line-height: .7
+
+.main-home__sales-percent
+	font-size: 100px	
+	font-weight: normal
+	line-height: .7	
+
+// .products-slider
+.card
+	background: #fff
+	width: 280px
+	height: 480px
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+	padding: 30px 0 0
+	font-weight: 600
+	font-size: 14px
+	transition: .3s ease
+	cursor: pointer
+	margin: 18px auto
+	.btn
+		margin: 23px auto 0
+		display: none
+	&:hover
+		box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1)
+		z-index: 1
+		.btn
+			display: flex
+
+			
+.list-tags
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	font-size: 12px
+	font-weight: 600
+	text-transform: uppercase
+	position: absolute
+	left: 0
+	top: 20px
+	li
+		display: flex
+		align-items: center
+		text-align: center
+		justify-content: center
+		padding: 6px 11px 4px
+		margin: 0 0 3px
+		height: 28px
+		&:last-child
+			margin: 0
+
+.bg-accent
+	background: $accent
+
+.bg-light-grey
+	background: #ececec	
+
+.price-wrapper
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	font-weight: 700
+	font-size: 18px
+	line-height: 1
+
+.old-price
+	text-decoration: line-through	
+	margin: 0 8px 0 0
+	color: #888888
+	font-size: 14px
+	font-weight: 600
+
+.card-img
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 210px
+	img
+		max-height: 100%	
+
+.card-title
+	color: #333333
+	margin: 18px auto 23px
+	&:hover
+		color: $accent
+
+.card-body
+	padding: 29px 18px 0
+
+.list-rating
+	@include menu-wrapper
+	justify-content: center
+	li
+		margin: 0 4px 0 0
+		width: 14px
+		height: 14px
+		&:last-child
+			margin: 0		
+		svg
+			fill: $accent
+	.star-0
+		svg
+			fill: #ececec
+				
+.slick-arrow
+	z-index: 1
+	opacity: 1
+	width: 42px
+	height: 42px
+	display: flex
+	align-items: center
+	justify-content: center
+	border: 1px solid #b7b7b7
+		radius: 50%
+	background: #fff
+	transition: .3s ease
+	svg
+		width: 15px
+		height: 18px
+		fill: #b7b7b7
+		transition: .3s ease
+	&::before
+		display: none
+	&:hover
+		border-color: $accent
+		svg
+			fill: $accent	
+
+.slick-prev
+	left: -21px
+
+.slick-next
+	right: -21px				
+
+// .section-about
+.section-about
+	color: #777
+	.container
+		justify-content: space-between
+	h2
+		margin: 0 0 43px
+	h3
+		margin: 0 0 49px
+	.box-text
+		margin: 0 0 46px
+		&:last-child
+			margin: 0			
+
 
 @import "media"
 // Всегда в конце
