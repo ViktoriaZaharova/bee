@@ -67,7 +67,7 @@
 
 					<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
 
-					<a href="#" class="links-header links-cabinet">
+					<a href="cabinet.html" class="links-header links-cabinet">
 						<span class="links-icon">
 							<svg class="svg-icon">
 								<use xlink:href="img/sprite.svg#user"></use>
@@ -76,7 +76,7 @@
 						<span class="links-text">Личный кабинет</span>
 					</a>
 
-					<a href="#" class="links-header links-basket">
+					<a href="checkout.html" class="links-header links-basket">
 						<span class="links-icon">
 							<svg class="svg-icon">
 								<use xlink:href="img/sprite.svg#basket"></use>
@@ -195,7 +195,7 @@
 			<div class="line-title">
 				<h2>Новинки</h2>
 
-				<a href="#" class="color-light-grey text-decoration">Все новинки</a>
+				<a href="catalog.html" class="color-light-grey text-decoration">Все новинки</a>
 			</div>
 
 			<div class="products-slider section-news__slider w-100">
@@ -983,7 +983,7 @@
 					<div class="footer-box">
 						<h3>Личный кабинет</h3>
 						<ul class="footer-menu">
-							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="cabinet.html">Личный кабинет</a></li>
 							<li><a href="#">Мои заказы</a></li>
 							<li><a href="#">Избранное</a></li>
 							<li><a href="#">Рассылка</a></li>
@@ -1061,6 +1061,40 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal__div" id="modal-callback">
+		<div class="modal__wrapper">
+			<div class="modal__close"></div>
+			<h2>Мы перезвоним Вам!</h2>
+	
+			<form method="post" class="form">
+	
+				<label>
+					<span class="input-title">Ваше имя <sup>*</sup></span>
+					<input type="text" name="name" required>
+				</label>
+
+				<label>
+					<span class="input-title">Номер телефона <sup>*</sup></span>
+					<input type="text" name="phone" required>
+				</label>
+
+				<label>
+					<span class="input-title">Ваше сообщение</span>
+					<textarea name="message"></textarea>
+				</label>
+	
+				<div class="required-fields">
+					<sup>*</sup> поля обязательные для заполнения
+				</div>
+
+				<button type="submit" class="btn btn-accent">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Пoдлoжкa -->
+	<div class="overlay"></div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
