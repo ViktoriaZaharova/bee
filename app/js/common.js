@@ -23,6 +23,29 @@ $('.products-slider').slick({
 		'\t\tc2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>\n' +
 		'</g>\n' +
 		'</svg>\n</button>',
+	responsive: [
+		{
+			breakpoint: 900,
+			settings: {
+				slidesToShow: 4,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				arrows: false,
+				dots: true
+			}
+		}
+	]
 });
 
 $('.brands-slider').slick({
@@ -43,6 +66,29 @@ $('.brands-slider').slick({
 		'\t\tc2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>\n' +
 		'</g>\n' +
 		'</svg>\n</button>',
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 5,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 4,
+			}
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				arrows: false,
+				dots: true
+			}
+		}
+	]
 });
 
 // модальные окна (несколько)
@@ -86,3 +132,21 @@ $(function () {
 	});
 });
 //end
+
+// mobile menu
+$('.btn-burger').on('click', function () {
+	$('.mobile-menu').fadeToggle();
+});
+
+$('.btn-close').on('click', function () {
+	$('.mobile-menu').fadeOut();
+});
+
+// header fixed mobile
+$(window).on('scroll', function () {
+	if ($(this).scrollTop() > 150) {
+		$('.header-fixed').css('top', 0);
+	} else {
+		$('.header-fixed').css('top', '-100%');
+	}
+});

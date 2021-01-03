@@ -28,6 +28,57 @@
 
 <body>
 
+	<div class="mobile-menu">
+		<div class="btn-close"></div>
+		<ul class="menu">
+			<li><a href="#" class="color-yellow">Акции</a></li>
+			<li><a href="#">Детям</a></li>
+			<li><a href="#">Дом</a></li>
+			<li><a href="#">Уход</a></li>
+			<li><a href="#">Лицо</a></li>
+			<li><a href="#">Волосы</a></li>
+			<li><a href="#">Красота</a></li>
+			<li><a href="#">Мужчинам</a></li>
+			<li><a href="#">Здоровье</a></li>
+			<li><a href="#">Аксессуары</a></li>
+		</ul>
+	</div>
+
+	<div class="header-fixed">
+		<div class="btn-burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<a href="#" class="btn-search"><svg class="svg-icon">
+				<use xlink:href="img/sprite.svg#search"></use>
+			</svg>
+		</a>
+
+		<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+		<a href="cabinet.html" class="links-header links-cabinet">
+			<span class="links-icon">
+				<svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#user"></use>
+				</svg>
+			</span>
+			<span class="links-text">Личный кабинет</span>
+		</a>
+
+		<a href="checkout.html" class="links-header links-basket">
+			<span class="links-icon">
+				<svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#basket"></use>
+				</svg>
+				<span class="links-basket__val">0</span>
+			</span>
+			<span class="links-text">Корзина</span>
+		</a>
+
+	</div>
+
 	<header>
 		<div class="header-top">
 			<div class="container">
@@ -48,6 +99,14 @@
 								<use xlink:href="img/sprite.svg#facebook"></use>
 							</svg></a></li>
 				</ul>
+				<div class="header-box d-mobile">
+					<div class="phone-wrapper">
+						<a href="tel:+380447654321" class="phone">(044) 765 43 21</a>
+						<a href="tel:0800123456" class="phone">0 (800) 12 34 56</a>
+					</div>
+					<div class="schedule">Ежедневно с 08.00 до 19.00</div>
+				</div>
+				<a href="#modal-callback" class="open_modal text-decoration color-yellow font-600 d-mobile">Обратный звонок</a>
 			</div>
 		</div>
 
@@ -55,6 +114,12 @@
 			<div class="container">
 
 				<div class="header-center__top w-100">
+					<div class="btn-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
 					<div class="header-box">
 						<div class="phone-wrapper">
 							<a href="tel:+380447654321" class="phone">(044) 765 43 21</a>
@@ -119,7 +184,21 @@
 		<div class="container">
 			<div class="home-main__slider w-100">
 				<div class="slide">
-					<img src="img/slide1.jpg" alt="" class="main-home__bg">
+					<div class="main-home__content">
+						<h3>Winter Sale</h3>
+						<div class="main-home__sales">
+							<div class="main-home__sales-before">До</div>
+							<div class="main-home__sales-value">
+								40 <span class="main-home__sales-percent">%</span>
+							</div>
+						</div>
+						<p>На косметику для него!</p>
+						<a href="#" class="btn btn-accent">Узнать больше</a>
+					</div>
+
+				</div>
+
+				<div class="slide">
 
 					<div class="main-home__content">
 						<h3>Winter Sale</h3>
@@ -136,7 +215,6 @@
 				</div>
 
 				<div class="slide">
-					<img src="img/slide1.jpg" alt="" class="main-home__bg">
 
 					<div class="main-home__content">
 						<h3>Winter Sale</h3>
@@ -153,24 +231,6 @@
 				</div>
 
 				<div class="slide">
-					<img src="img/slide1.jpg" alt="" class="main-home__bg">
-
-					<div class="main-home__content">
-						<h3>Winter Sale</h3>
-						<div class="main-home__sales">
-							<div class="main-home__sales-before">До</div>
-							<div class="main-home__sales-value">
-								40 <span class="main-home__sales-percent">%</span>
-							</div>
-						</div>
-						<p>На косметику для него!</p>
-						<a href="#" class="btn btn-accent">Узнать больше</a>
-					</div>
-
-				</div>
-
-				<div class="slide">
-					<img src="img/slide1.jpg" alt="" class="main-home__bg">
 
 					<div class="main-home__content">
 						<h3>Winter Sale</h3>
@@ -1066,9 +1126,9 @@
 		<div class="modal__wrapper">
 			<div class="modal__close"></div>
 			<h2>Мы перезвоним Вам!</h2>
-	
+
 			<form method="post" class="form">
-	
+
 				<label>
 					<span class="input-title">Ваше имя <sup>*</sup></span>
 					<input type="text" name="name" required>
@@ -1083,7 +1143,7 @@
 					<span class="input-title">Ваше сообщение</span>
 					<textarea name="message"></textarea>
 				</label>
-	
+
 				<div class="required-fields">
 					<sup>*</sup> поля обязательные для заполнения
 				</div>

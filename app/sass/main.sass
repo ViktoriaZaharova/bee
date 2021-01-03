@@ -150,9 +150,9 @@ button
 	background: transparent
 
 .container
-	max-width: 1440px
+	max-width: 1430px
 	width: 100%
-	padding: 0 15px
+	padding: 0 10px
 	position: relative
 	display: flex
 	flex-wrap: wrap
@@ -265,6 +265,7 @@ h3
 			border-radius: 50%
 			background: #777777		
 			margin: 0 9px 0 0
+			
 
 // header
 header
@@ -306,6 +307,26 @@ header
 	&__top
 		padding: 27px 0 21px
 		@include menu-wrapper
+
+.header-fixed
+	width: 100%
+	position: fixed
+	left: 0
+	top: -100%
+	z-index: 3
+	background: $header-bg		
+	padding: 10px
+	transition: .3s ease
+	display: none
+	align-items: center
+	flex-wrap: wrap
+	.logo
+		margin: 0 auto
+	.links-text
+		display: none
+	.links-header	
+		.links-icon
+			margin: 0		
 
 .menu
 	font-weight: 600
@@ -386,6 +407,9 @@ header
 	top: 0
 	right: -5px
 
+.d-mobile
+	display: none	
+
 .schedule
 	margin: 11px 0
 	color: #777777
@@ -421,14 +445,13 @@ header
 	margin: 0 0 69px
 
 .home-main__slider
+	background: url('../img/slide1.jpg') no-repeat center
+		size: cover
 	.slide
 		position: relative
 		min-height: 551px
 		padding: 116px 20px 20px 390px
 
-.main-home__bg
-	@include img-100
-	@include position-absolute-center	
 
 .slick-slide
 	outline: none
@@ -470,6 +493,8 @@ header
 	display: flex
 	flex-direction: column
 	align-items: flex-start
+	position: relative
+	z-index: 1
 	h3
 		text-transform: uppercase
 		font-size: 30px
@@ -592,7 +617,7 @@ header
 		color: $accent
 
 .card-body
-	padding: 29px 18px 0
+	padding: 29px 15px 0
 
 .list-rating
 	@include menu-wrapper
@@ -701,11 +726,12 @@ footer
 
 .footer-bottom
 	background: $footer-bg	
-	padding: 16px 0
+	padding: 17px 0
 
 .copyright
 	margin: 0 auto
 	font-size: 13px	
+	text-align: center
 
 .footer-wrapper__bottom
 	padding: 20px 0 22px
@@ -833,8 +859,9 @@ footer
 	&::before
 		transform: rotate(45deg)
 	&::after
-		transform: rotate(135deg)			
+		transform: rotate(135deg)	
 
+					
 .overlay
 	z-index: 100
 	position: fixed
@@ -848,6 +875,71 @@ footer
 	left: 0
 	cursor: pointer
 	display: none
+
+.mobile-menu
+	display: none
+	z-index: 3
+	width: 100%	
+	position: fixed
+	left: 0
+	top: 50px
+	background: $header-bg
+	padding: 38px 10px
+	.menu
+		flex-direction: column
+		align-items: flex-start
+		font-size: 18px
+		font-weight: normal
+		margin: -17px 0 0
+		li
+			width: 100%
+			margin: 0
+			border-bottom: 1px solid rgba(#fff, .15)
+			a
+				width: 100%
+				padding: 17px 0
+				
+.btn-search
+	width: 24px
+	height: 24px
+	cursor: pointer
+	margin: 0 0 0 20px
+	display: flex
+	align-items: center
+	justify-content: center
+	svg
+		fill: #fff
+
+.btn-close
+	position: relative
+	margin: 0 0 6px auto
+	width: 18px
+	height: 18px
+	&:before, &:after
+		content: ''
+		position: absolute
+		width: 1px
+		height: 100%
+		left: 8px
+		top: 0
+		background: #fff
+	&::before
+		transform: rotate(45deg)
+	&::after
+		transform: rotate(135deg)	
+
+.btn-burger
+	width: 24px
+	display: none
+	margin: 0 20px 0 0
+	span
+		display: block
+		width: 100%
+		height: 2px
+		background: #fff
+		margin: 0 0 6px
+		&:last-child
+			margin: 0	
 
 @import "media"
 // Всегда в конце
