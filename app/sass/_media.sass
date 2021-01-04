@@ -28,6 +28,9 @@
 	.form-subscribe
 		width: 260px
 
+	.checkout-order__footer
+		width: 100%	
+
 @media only screen and (max-width : 1200px)	
 	.brands-section
 		margin: 70px 0
@@ -102,7 +105,19 @@
 
 	.registration-page
 		padding: 53px 0	90px	
+
+	.checkout-form__content, .checkout-order
+		width: 100%	
 							
+	.checkout-page
+		margin: 0 0 78px
+
+	.checkout-order
+		margin: 20px 0 0
+
+	.checkout-order__title
+		font-size: 13px
+		max-width: none		
 
 @media only screen and (max-width : 800px)	
 	.footer-wrapper__bottom
@@ -182,7 +197,19 @@
 
 	.quote-acrticle
 		margin: 0	
-		line-height: 1.71				
+		line-height: 1.71	
+
+	.col-2
+		width: 50%
+
+	.col-4
+		width: 100%
+
+	.input-title
+		margin: 0 0 7px
+
+	.checkout-text-line
+		margin: 31px auto 55px							
 
 @media only screen and (max-width : 700px)	
 	.btn-burger
@@ -300,8 +327,27 @@
 	.slick-dots
 		bottom: 21px	
 
-	.col-3
+	.col-3, .col-5
 		width: 100%		
+
+	.list-checkbox
+		margin: 0 0 20px
+		li
+			width: 50%
+			.checkbox
+				margin: 0 0 20px	
+
+	.list-checkbox.justify-start li
+		margin: 0
+
+	.checkout-order
+		padding: 30px 20px 39px
+
+	.amount
+		margin: 0 15px
+
+	.checkout-order__body-item
+		padding: 0 0 0 25px						
 
 @media only screen and (max-width : 475px)
 	.form-subscribe
@@ -318,7 +364,19 @@
 		bottom: 30px	
 		
 
-/* Custom, iPhone Retina */
+@media only screen and (max-width : 440px)		
+	.checkout-order__photo
+		width: 80px
+		height: 80px
+		padding: 10px
+
+	.checkout-order__body-item
+		width: calc(100% - 80px)	
+		padding: 0 0 0 15px
+
+	.amount
+		margin: 0 10px	
+
 @media only screen and (max-width : 420px)
 	.box-subscribe
 		flex-direction: column
@@ -335,6 +393,12 @@
 		padding: 40px 20px 60px
 		min-height: auto
 
+	.checkout-form button
+		max-width: 160px
+
+	.consent
+		padding: 0 0 0 15px	
+
 @media only screen and (max-width : 360px)
 	.footer-menu
 		font-size: 12px
@@ -346,3 +410,36 @@
 		font-size: 12px
 		.phone
 			font-size: 12px
+
+	.checkout-order__photo
+		width: 60px
+		height: 60px
+		padding: 5px
+
+	.checkout-order__body-item
+		width: calc(100% - 60px)
+		padding: 0 0 0 10px
+
+	.amount-wrapper
+		font-size: 16px
+
+	.amount 
+		span
+			width: 30px
+			height: 30px
+		input
+			height: 30px
+			width: 36px
+			font-size: 14px
+
+	.checkout-order
+		padding: 30px 15px	
+		
+	.checkout-form button
+		margin: 0 auto	
+
+	.consent
+		width: 100%
+		padding: 0
+		margin: 20px auto 0	
+		text-align: center							

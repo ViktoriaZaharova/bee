@@ -243,6 +243,11 @@ a.color-light-grey
 h1
 	font-size: 24px
 	font-weight: 900
+	width: 100%
+
+.line-title
+	h1
+		width: fit-content	
 
 h2
 	font-size: 26px
@@ -940,6 +945,7 @@ footer
 		transform: rotate(45deg)
 	&::after
 		transform: rotate(135deg)	
+	
 
 .btn-burger
 	width: 24px
@@ -995,22 +1001,7 @@ footer
 		&:last-child
 			margin: 0 auto
 
-.col-3
-	width: 33.3%
-	padding: 0 15px
 
-.col-12
-	width: 100%
-	padding: 0 15px	
-					
-.m-auto
-	margin: 0 auto
-
-.row
-	display: flex
-	flex-wrap: wrap
-	align-items: flex-start
-	margin: 0 -15px	
 
 // .checkbox
 .checkbox
@@ -1047,6 +1038,9 @@ footer
 		width: 8px
 		height: 8px
 		background: $accent	
+
+input[type=radio]:checked ~ .label
+	font-weight: 600	
 
 // registration-page
 .registration-page
@@ -1162,6 +1156,230 @@ blockquote
 		max-width: 730px
 		margin: 0 auto 
 		width: 100%		
+
+// page checkout
+.checkout-page
+	margin: 0 0 64px
+	h1
+		text-align: center
+
+.checkout-text-line
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	justify-content: center
+	margin: 31px auto 60px
+	a
+		text-decoration: underline
+		display: inline
+		color: #333333
+		&:hover
+			color: $accent
+
+.checkout-form
+	width: 100%
+	@include box-wrapper2	
+	label
+		margin: 0 0 39px
+	button
+		max-width: 180px	
+					
+				
+.checkout-form__box
+	margin: 0 0 20px
+	&:last-child
+		margin: 0
+	h3
+		width: 100%
+		margin: 0 0 35px
+		font-size: 20px
+		font-weight: normal
+	.checkbox
+		font-size: 14px	
+	input
+		font-size: 15px	
+	textarea
+		height: 150px
+		border-color: #e7e7e7
+		padding: 20px 21px
+		font-size: 15px
+		&::placeholder
+			color: #999999	
+
+.checkout-form__content
+	width: 49%	
+
+.list-checkbox
+	width: 100%
+	@include box-wrapper2	
+
+.list-checkbox.justify-start
+	justify-content: flex-start
+	li
+		margin: 0 80px 0 0
+		&:last-child
+			margin: 0	
+
+.btn-delete
+	position: absolute
+	right: 0
+	top: 0
+	width: 15px
+	height: 15px
+	&:before, &:after
+		content: ''
+		position: absolute
+		width: 2px
+		height: 100%
+		left: 8px
+		top: 0
+		background: #333333
+		border-radius: 2px
+	&::before
+		transform: rotate(45deg)
+	&::after
+		transform: rotate(135deg)		
+
+.checkout-order
+	border: solid 1px #e7e7e7
+	width: 44%
+	background: #ffffff
+	padding: 31px 30px 39px
+	h3
+		padding: 0 0 29px
+		border-bottom: 1px solid #e7e7e7
+		font-size: 20px
+		font-weight: normal
+
+.checkout-order__body
+	width: 100%
+	padding: 39px 0 0
+
+.checkout-order__box	
+	@include box-wrapper2
+	margin: 0 0 30px	
+	width: 100%	
+	position: relative
+
+.checkout-order__photo
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 15px
+	border: solid 1px #e7e7e7
+	width: 130px
+	height: 130px
+	background: #fff
+	img
+		max-height: 100%
+
+.checkout-order__body-item
+	width: calc(100% - 130px)
+	padding: 0 0 0 33px	
+	position: relative	
+
+.checkout-order__title
+	max-width: 260px
+	width: 100%
+	color: #333333
+	font-weight: 600
+	padding: 0 15px 0 0
+
+.checkout-order__manufacturer-product
+	margin: 11px 0 8px
+	color: #777777
+	font-size: 13px
+
+.amount-wrapper
+	width: 100%
+	margin: 10px 0 0
+	color: #555555
+	font-size: 18px
+	@include menu-wrapper				
+
+.amount	
+	margin: 0 22px
+	@include menu-wrapper	
+	input
+		border: none
+		padding: 0
+		text-align: center
+		width: 46px
+		height: 34px
+		color: #555555
+		font-size: 16px
+	span
+		cursor: pointer	
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 34px
+		height: 34px
+		border: solid 1px #dfdfdf
+		background: #fff
+		position: relative
+
+.down
+	&::before
+		content: ''
+		display: inline-block
+		width: 13px
+		height: 1px
+		background: #888888			
+
+.up
+	&::before
+		content: ''
+		display: inline-block
+		width: 13px
+		height: 1px
+		background: #888888	
+	&::after
+		content: ''
+		background: #888888	
+		width: 1px
+		height: 13px
+		@include position-absolute-center
+
+.checkout-order__footer
+	width: calc(100% - 163px)
+	padding: 29px 0 0
+	border-top: 1px solid #e7e7e7
+	margin: 0 0 0 auto
+
+.list-total-order
+	width: 100%
+	li
+		width: 100%
+		@include box-wrapper
+		margin: 0 0 5px
+		&:last-child
+			margin: 0
+	span
+		color: #999		
+
+.the-sum
+	font-weight: 600
+
+.the-sum__total
+	font-size: 20px
+  font-weight: 900
+
+.button-group
+	margin: 29px 0 0
+	@include box-wrapper
+	
+
+.consent
+	width: calc(100% - 180px)
+	padding: 0 0 0 25px
+	font-size: 11px
+	a
+		display: inline	
+		color: #333333
+		text-decoration: underline
+
 
 @import "media"
 // Всегда в конце

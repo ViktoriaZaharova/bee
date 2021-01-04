@@ -101,7 +101,7 @@ $(function () {
 	var close = $('.modal__close, .overlay');
 	var modal = $('.modal__div');
 
-	open_modal.on('click',function (event) {
+	open_modal.on('click', function (event) {
 		event.preventDefault();
 
 		modal.css('display', 'none').animate({
@@ -137,19 +137,19 @@ $(function () {
 });
 
 // клик вне модального окна 
-$(document).on('click', function (e) { 
-	var div = $(".modal__wrapper"); 
+$(document).on('click', function (e) {
+	var div = $(".modal__wrapper");
 	var btn = $('.open_modal');
 	if (!div.is(e.target) && !btn.is(e.target) && btn.has(e.target).length === 0 && div.has(e.target).length === 0) { // и не по его дочерним элементам
 		$('.modal__div').animate({
-				opacity: 0,
-				top: '45%'
-			}, 200,
-				function () {
-					$(this).css('display', 'none');
-					$('.overlay').fadeOut(400);
-				}
-			);
+			opacity: 0,
+			top: '45%'
+		}, 200,
+			function () {
+				$(this).css('display', 'none');
+				$('.overlay').fadeOut(400);
+			}
+		);
 	}
 });
 
@@ -169,4 +169,24 @@ $(window).on('scroll', function () {
 	} else {
 		$('.header-fixed').css('top', '-100%');
 	}
+});
+
+// price product
+$('.down').on('click', function () {
+	var $input = $(this).parent().find('input');
+	var totalSum = $(this).parents().find('.heckout-order__sum');
+	var count = parseInt($input.val()) - 1;
+
+	count = count < 1 ? 1 : count;
+	$input.val(count);
+	$input.trigger("change");
+	return false;
+});
+
+$('.up').on('click', function () {
+	var $input = $(this).parent().find('input');
+	$input.val(parseInt($input.val()) + 1);
+	$input.trigger("change");
+
+	return false;
 });
