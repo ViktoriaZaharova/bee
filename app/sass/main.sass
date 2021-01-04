@@ -241,11 +241,8 @@ a.color-light-grey
 	margin: 0 0 11px
 
 h1
-	width: 100%
-	text-align: center
 	font-size: 24px
 	font-weight: 900
-
 
 h2
 	font-size: 26px
@@ -273,6 +270,15 @@ h3
 			background: #777777		
 			margin: 0 9px 0 0
 			
+.list-number
+	counter-reset: item
+	li
+		&::before
+			content: counters(item, ".") ". "
+			counter-increment: item
+			display: inline-block
+			margin: 0 5px 0 0
+			font-weight: bold
 
 // header
 header
@@ -953,6 +959,8 @@ footer
 	padding: 98px 0 99px
 	h1
 		margin: 0 auto 69px
+		text-align: center
+		width: 100%
 
 .form-cabinet
 	margin: 0 auto
@@ -1045,13 +1053,114 @@ footer
 	padding: 100px 0 117px
 	h1
 		margin: 0 auto 64px
+		text-align: center
+		width: 100%
 
 .form-registration
 	button
 		max-width: 220px		
 
+// breadcrumbs
+.breadcrumbs
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 58px
+	font-size: 12px
+	color: #777
+	li
+		a
+			position: relative
+			color: #333333
+			&:hover
+				color: $accent
+			&::after
+				content: '/'
+				display: inline-block
+				margin: 0 5px
 
+.date-article
+	margin: 0 70px 0 auto
+	color: #888888
+	
+.btn-share
+	color: #888888
+	display: flex
+	align-items: center
+	svg
+		fill: #888888
+		width: 15px
+		height: 16px
+		margin: 0 8px 0 0
 
+// article-page
+.article-page
+	margin: 0 0 95px
+	.line-title
+		padding: 0 0 24px
+		margin: 0 0 60px	
+
+.article-content
+	line-height: 1.71
+	@include box-wrapper2		
+	h2
+		font-size: 22px
+		border-bottom: 1px solid #e7e7e7
+		padding: 0 0 15px
+		margin: 0 0 29px
+	.box-text
+		line-height: 1.71	
+	h4
+		margin: 77px 0 49px
+		font-size: 20px
+	h3
+		margin: 0 0 25px
+		font-size: 18px
+	ul, ol
+		margin: 0 0 25px
+	strong
+		font-weight: bold
+		margin: 0 0 25px
+		display: inline-block	
+
+.acticle-box__left
+	width: 51%
+	.article-img
+		margin: 0 0 70px
+		height: 450px
+		
+.article-img
+	width: 100%	
+	img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	
+blockquote
+	padding: 20px 35px 18px 28px
+	border-left: 5px solid $accent
+	background: #f7f7f7
+	margin: 55px 0 50px
+
+.acticle-box__right
+	width: 42.5%
+	.article-img
+		margin: 67px 0 0
+		height: 440px
+	
+.font-style-italic
+	font-style: italic
+
+.quote-acrticle
+	margin: 77px auto 0
+	font-weight: bold
+	text-align: center
+	line-height: 24px
+	p
+		max-width: 730px
+		margin: 0 auto 
+		width: 100%		
 
 @import "media"
 // Всегда в конце
