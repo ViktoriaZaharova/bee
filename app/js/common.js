@@ -91,6 +91,9 @@ $('.brands-slider').slick({
 	]
 });
 
+// input mask
+$('input[name="phone"]').mask('+38 (999) 999 - 99 - 99');
+
 // модальные окна (несколько)
 $(function () {
 	var overlay = $('.overlay');

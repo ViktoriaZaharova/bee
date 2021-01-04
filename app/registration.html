@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Бджілка - интернет-магазин бытовой химии</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<div class="mobile-menu">
+		<div class="btn-close"></div>
+		<ul class="menu">
+			<li><a href="#" class="color-yellow">Акции</a></li>
+			<li><a href="#">Детям</a></li>
+			<li><a href="#">Дом</a></li>
+			<li><a href="#">Уход</a></li>
+			<li><a href="#">Лицо</a></li>
+			<li><a href="#">Волосы</a></li>
+			<li><a href="#">Красота</a></li>
+			<li><a href="#">Мужчинам</a></li>
+			<li><a href="#">Здоровье</a></li>
+			<li><a href="#">Аксессуары</a></li>
+		</ul>
+	</div>
+
+	<div class="header-fixed">
+		<div class="btn-burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<a href="#" class="btn-search"><svg class="svg-icon">
+				<use xlink:href="img/sprite.svg#search"></use>
+			</svg>
+		</a>
+
+		<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+		<a href="cabinet.html" class="links-header links-cabinet">
+			<span class="links-icon">
+				<svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#user"></use>
+				</svg>
+			</span>
+			<span class="links-text">Личный кабинет</span>
+		</a>
+
+		<a href="checkout.html" class="links-header links-basket">
+			<span class="links-icon">
+				<svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#basket"></use>
+				</svg>
+				<span class="links-basket__val">0</span>
+			</span>
+			<span class="links-text">Корзина</span>
+		</a>
+
+	</div>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<ul class="home-menu">
+					<li><a href="#" class="color-yellow font-bold">Акции</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">Карта магазинов</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+
+				<ul class="list-social">
+					<li><a href="#"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#instagram"></use>
+							</svg></a></li>
+					<li><a href="#"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#facebook"></use>
+							</svg></a></li>
+				</ul>
+				<div class="header-box d-mobile">
+					<div class="phone-wrapper">
+						<a href="tel:+380447654321" class="phone">(044) 765 43 21</a>
+						<a href="tel:0800123456" class="phone">0 (800) 12 34 56</a>
+					</div>
+					<div class="schedule">Ежедневно с 08.00 до 19.00</div>
+				</div>
+				<a href="#modal-callback" class="open_modal text-decoration color-yellow font-600 d-mobile">Обратный звонок</a>
+			</div>
+		</div>
+
+		<div class="header-center">
+			<div class="container">
+
+				<div class="header-center__top w-100">
+					<div class="btn-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
+					<div class="header-box">
+						<div class="phone-wrapper">
+							<a href="tel:+380447654321" class="phone">(044) 765 43 21</a>
+							<a href="tel:0800123456" class="phone">0 (800) 12 34 56</a>
+						</div>
+						<div class="schedule">Ежедневно с 08.00 до 19.00</div>
+
+						<a href="#modal-callback" class="open_modal text-decoration color-yellow font-600">Обратный звонок</a>
+					</div>
+
+					<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+					<a href="cabinet.html" class="links-header links-cabinet">
+						<span class="links-icon">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#user"></use>
+							</svg>
+						</span>
+						<span class="links-text">Личный кабинет</span>
+					</a>
+
+					<a href="checkout.html" class="links-header links-basket">
+						<span class="links-icon">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#basket"></use>
+							</svg>
+							<span class="links-basket__val">0</span>
+						</span>
+						<span class="links-text">Корзина</span>
+					</a>
+				</div>
+
+				<div class="header-bottom w-100">
+					<ul class="menu">
+						<li><a href="#" class="color-yellow">Акции</a></li>
+						<li><a href="#">Детям</a></li>
+						<li><a href="#">Дом</a></li>
+						<li><a href="#">Уход</a></li>
+						<li><a href="#">Лицо</a></li>
+						<li><a href="#">Волосы</a></li>
+						<li><a href="#">Красота</a></li>
+						<li><a href="#">Мужчинам</a></li>
+						<li><a href="#">Здоровье</a></li>
+						<li><a href="#">Аксессуары</a></li>
+					</ul>
+
+					<form method="post" class="form-search">
+						<button type="submit">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</button>
+						<label><input type="text" placeholder="Артикул или наименование..." name="search"></label>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<section class="wrapper registration-page">
+		<div class="container">
+			<h1>Регистрация</h1>
+
+			<form method="POST" class="form-cabinet form-registration w-100">
+				<div class="row">
+					<div class="col-3">
+						<label>
+							<span class="input-title">Ваше имя</span>
+							<input type="text" placeholder="Иван" name="name">
+						</label>
+						<label>
+							<span class="input-title">Ваша фамилия</span>
+							<input type="text" placeholder="Иванов" name="first_name">
+						</label>
+					</div>
+
+					<div class="col-3">
+						<label>
+							<span class="input-title">Телефон</span>
+							<input type="text" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _" name="phone" required>
+						</label>
+
+						<label>
+							<span class="input-title">E-mail</span>
+							<input type="text" placeholder="example@mail.com" name="mail" required>
+						</label>
+					</div>
+
+					<div class="col-3">
+						<label>
+							<span class="input-title">Пароль</span>
+							<input type="text" placeholder="Придумайте пароль" name="password" required>
+						</label>
+						<label>
+							<span class="input-title">Подтверждение пароля</span>
+							<input type="text" placeholder="Введите пароль еще раз" name="double_password" required>
+						</label>
+					</div>
+
+					<div class="col-12">
+						<button type="submit" class="btn btn-accent">Зарегистрироваться</button>
+
+						<label class="checkbox">
+							<input class="checkbox-inp" type="checkbox" name="checkbox" checked>
+							<span class="checkbox-custom"></span>
+							<span class="label">Получать уведомления о новинках, скидках и акциях</span>
+						</label>
+					</div>
+				</div>
+
+				
+
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-wrapper">
+			<div class="container">
+				<div class="footer-wrapper__top w-100">
+					<div class="footer-box">
+						<h3>Категории товаров</h3>
+						<ul class="footer-menu column-count">
+							<li><a href="#">Детям</a></li>
+							<li><a href="#">Дом</a></li>
+							<li><a href="#">Уход</a></li>
+							<li><a href="#">Лицо</a></li>
+							<li><a href="#">Волосы</a></li>
+							<li><a href="#">Красота</a></li>
+							<li><a href="#">Мужчинам</a></li>
+							<li><a href="#">Здоровье</a></li>
+							<li><a href="#">Аксессуары</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-box">
+						<h3>Информация</h3>
+						<ul class="footer-menu">
+							<li><a href="#">Новинки</a></li>
+							<li><a href="#">Карта магазинов</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-box">
+						<h3>Личный кабинет</h3>
+						<ul class="footer-menu">
+							<li><a href="cabinet.html">Личный кабинет</a></li>
+							<li><a href="#">Мои заказы</a></li>
+							<li><a href="#">Избранное</a></li>
+							<li><a href="#">Рассылка</a></li>
+							<li><a href="#">Мои бонусы и скидки</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-box">
+						<h3>Дополнительно</h3>
+						<ul class="footer-menu">
+							<li><a href="#">Связаться с нами</a></li>
+							<li><a href="#">Возврат товара</a></li>
+							<li><a href="#">Пользовательское соглашение</a></li>
+							<li><a href="#">Политика конфиденциальности</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-box">
+						<h3>Давайте дружить</h3>
+						<ul class="list-social">
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#instagram"></use>
+									</svg></a></li>
+							<li><a href="#"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#facebook"></use>
+									</svg></a></li>
+						</ul>
+						<h3>Принимаем к оплате</h3>
+						<ul class="list-payment">
+							<li><img src="img/visa.png" alt=""></li>
+							<li><img src="img/mastercard.png" alt=""></li>
+							<li><img src="img/privat.png" alt=""></li>
+						</ul>
+					</div>
+
+
+				</div>
+
+				<div class="footer-wrapper__bottom w-100">
+					<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+					<div class="header-box">
+						<a href="mailto:hello@bdzhilka.com.ua" class="mail">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#mail"></use>
+							</svg>
+							<div class="mail-text">hello@bdzhilka.com.ua</div>
+						</a>
+						<div class="phone-wrapper">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+							<a href="tel:+380447654321" class="phone">(044) 765 43 21</a>
+							<a href="tel:0800123456" class="phone">0 (800) 12 34 56</a>
+						</div>
+
+						<a href="#modal-callback" class="open_modal text-decoration color-yellow font-600 links-call">Обратный
+							звонок</a>
+					</div>
+
+					<div class="box-subscribe">
+						<h3>Подпишитесь на новости</h3>
+						<form method="post" class="form-subscribe">
+							<label><input type="text" placeholder="Ваш E-mail" required name="mail"></label>
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#mail"></use>
+								</svg></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="copyright">© 2020 Бджілка – бытовая химия. Все права защищены.</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal__div" id="modal-callback">
+		<div class="modal__wrapper">
+			<div class="modal__close"></div>
+			<h2>Мы перезвоним Вам!</h2>
+
+			<form method="post" class="form">
+
+				<label>
+					<span class="input-title">Ваше имя <sup>*</sup></span>
+					<input type="text" name="name" required>
+				</label>
+
+				<label>
+					<span class="input-title">Номер телефона <sup>*</sup></span>
+					<input type="text" name="phone" required>
+				</label>
+
+				<label>
+					<span class="input-title">Ваше сообщение</span>
+					<textarea name="message"></textarea>
+				</label>
+
+				<div class="required-fields">
+					<sup>*</sup> поля обязательные для заполнения
+				</div>
+
+				<button type="submit" class="btn btn-accent">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Пoдлoжкa -->
+	<div class="overlay"></div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
