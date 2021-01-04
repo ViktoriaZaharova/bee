@@ -133,8 +133,25 @@ $(function () {
 				}
 			);
 	});
+
 });
-//end
+
+// клик вне модального окна 
+$(document).on('click', function (e) { 
+	var div = $(".modal__wrapper"); 
+	var btn = $('.open_modal');
+	if (!div.is(e.target) && !btn.is(e.target) && btn.has(e.target).length === 0 && div.has(e.target).length === 0) { // и не по его дочерним элементам
+		$('.modal__div').animate({
+				opacity: 0,
+				top: '45%'
+			}, 200,
+				function () {
+					$(this).css('display', 'none');
+					$('.overlay').fadeOut(400);
+				}
+			);
+	}
+});
 
 // mobile menu
 $('.btn-burger').on('click', function () {
