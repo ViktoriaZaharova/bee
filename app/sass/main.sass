@@ -551,6 +551,10 @@ header
 	line-height: .7	
 
 // .products-slider
+.product-slider
+	.card
+		margin: 18px auto
+	
 .card
 	background: #fff
 	max-width: 280px
@@ -566,7 +570,7 @@ header
 	font-size: 14px
 	transition: .3s ease
 	cursor: pointer
-	margin: 18px auto
+	margin: 0 auto
 	.btn
 		margin: 23px auto 0
 		display: none
@@ -1012,6 +1016,7 @@ footer
 	font-size: 13px
 	width: fit-content
 	margin: 0 auto
+	cursor: pointer
 
 .checkbox-custom
 	position: relative
@@ -1206,6 +1211,8 @@ blockquote
 		font-size: 15px
 		&::placeholder
 			color: #999999	
+	.col-4
+		width: 35%		
 
 .checkout-form__content
 	width: 49%	
@@ -1364,7 +1371,7 @@ blockquote
 
 .the-sum__total
 	font-size: 20px
-  font-weight: 900
+	font-weight: 900
 
 .button-group
 	margin: 29px 0 0
@@ -1380,6 +1387,254 @@ blockquote
 		color: #333333
 		text-decoration: underline
 
+// section-seo
+.section-seo
+	margin: 0 0 114px
+
+// .catalog
+.catalog-section
+	.line-title
+		padding: 0
+		border: none
+		margin: 0 0 56px
+	.breadcrumbs
+		margin: 0 0 40px
+
+.catalog-wrapper
+	width: 100%
+	margin: 0 0 90px
+	@include box-wrapper2
+
+.catalog-content
+	width: calc(100% - 300px)
+	padding: 0 0 0 30px			
+
+.slogan
+	padding: 19px 0 0
+	max-width: 570px
+	width: 100%
+	border-top: 1px solid #888888		
+	line-height: 1.57
+	font-style: italic	
+
+.sidebar
+	max-width: 300px
+	width: 100%
+	h3
+		margin: 39px 0 36px
+		display: flex
+		align-items: center
+		font-size: 18px
+		font-weight: normal
+	.list-checkbox
+		flex-direction: column
+		align-items: flex-start
+		li
+			width: 100%
+			margin: 0 0 13px
+			&:last-child
+				margin: 0
+		.checkbox
+			margin: 0			
+
+.filter-icon
+	width: 22px
+	height: 22px
+	margin: 0 12px 0 0
+	fill: #555555		
+
+.sidebar-box
+	width: 100%
+	overflow-y: scroll
+	border-bottom: 1px solid #f2f2f2
+	margin: 0 0 30px
+	h4
+		font-size: 15px
+		font-weight: 600
+	&:last-child
+		border: none	
+		margin: 0
+
+.filter-wrapper
+	padding: 30px 20px 5px
+	border: solid 1px #eeeeee
+	.sidebar-box
+		&:last-child
+			border: none
+			margin: 0	
+
+.menu-group-orders
+	font-size: 13px
+	li
+		margin: 0 0 17px
+		&:last-child
+			margin: 0
+		a
+			color: #333333
+			span
+				color: #888	
+			&:hover
+				color: $accent
+
+.checkbox-val
+	color: #888					
+
+.block_title
+	width: 100%
+	margin: 0 0 26px
+	cursor: pointer
+	@include box-wrapper
+	&:after
+		content: ''
+		display: inline-block
+		width: 0
+		height: 0
+		border:
+			left: 4px solid transparent
+			right: 4px solid transparent
+			top: 6px solid #999999
+		transition: .3s ease
+
+.in
+	.block_title
+		&::after
+			transform: rotate(180deg)		
+
+.block_hover
+	padding: 2px 0 0
+	margin: 25px 0
+	width: 100%
+	display: none
+
+.scroll-block	
+	max-height: 196px
+	height: 100%
+	overflow-y: auto
+	&::-webkit-scrollbar
+		width: 6px
+		height: 6px
+		border-radius: 3px
+	&::-webkit-scrollbar-track
+		background-color: #cccccc
+		border-radius: 3px
+	&::-webkit-scrollbar-track-piece
+		background-color: #f2f2f2
+		border-radius: 3px
+	&::-webkit-scrollbar-thumb
+		background-color: #cccccc
+		border-radius: 3px
+	&::-webkit-scrollbar-corner
+		background-color: #f2f2f2
+		border-radius: 3px
+	&::-webkit-resizer
+		background-color: #cccccc
+		border-radius: 3px
+
+.range_val
+	width: 100%
+	@include menu-wrapper
+
+.inp-group
+	width: 100%
+	color: #555555
+	font-family: $font
+	font-size: 12px
+	padding: 0 20px
+	margin: 0 0 14px
+	@include menu-wrapper
+	input
+		border-radius: 1px
+		border: solid 1px #dfdfdf
+		background-color: #ffffff
+		width: 60px
+		height: 24px
+		text-align: center
+		font-size: 12px
+		color: #555555
+		font-family: $font
+		padding: 0
+	.line
+		display: inline-block
+		margin: 0 23px
+
+.ui-widget.ui-widget-content
+	border: none
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br
+	border-radius: 1.5px
+
+.ui-widget-content
+	background: rgba(#000000, .1)	
+	width: calc(100% - 28px)
+	margin: 0 auto
+
+.ui-slider-horizontal
+	height: 3px
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+	width: 11px
+	height: 11px
+	border-radius: 50%
+	box-shadow: 0 0 7.8px 0.2px rgba(0, 0, 0, 0.15)
+	border: 3px solid #fff
+	background: #e3c899
+	cursor: pointer
+	outline: none
+
+.ui-slider .ui-slider-range
+	background: #e3c899	
+
+.sorting-wrapper
+	color: #888888
+	width: 100%
+	margin: 0 0 30px
+	@include box-wrapper	
+
+.reset-filter
+	display: flex
+	align-items: center
+	color: #888888
+	svg
+		transform: scale(-1,1)
+		width: 16px
+		height: 14px
+		fill: #888888
+		margin: 0 11px 0 0
+	&:hover
+		color: $accent
+
+.sorting-box
+	display: flex
+	align-items: center
+	select
+		cursor: pointer
+		border: none
+		width: auto
+		margin: 0 0 0 10px
+		padding: 0 15px 0 0
+		color: #333333
+		font-weight: 600
+		font-size: 14px
+		background: url('../img/sort-arrows-couple-pointing-up-and-down.svg') no-repeat right center
+			size: 8px
+
+.pagination
+	font-size: 16px
+	font-weight: 600
+	width: 100%
+	justify-content: center
+	@include menu-wrapper	
+	li
+		margin: 0 13px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #888888
+			&:hover
+				color: $accent
+		.active
+			font-weight: bold
+			color: #333333	
 
 @import "media"
 // Всегда в конце
