@@ -199,7 +199,14 @@
 
 			<div class="catalog-wrapper">
 				<div class="sidebar">
-					<div class="sidebar-box">
+					<div class="filters-btn-mobile">
+						<a href="#" data-box="sidebar-box-group">Группа товаров</a>
+						<a href="#" data-box="filter-wrapper">Фильтры</a>
+						<a href="#" data-box="sorting-mobile">Сортировка</a>
+					</div>
+
+					<div class="sidebar-box sidebar-box-mobile" data-box="sidebar-box-group">
+						<div class="btn-close-sidebar"></div>
 						<div class="panel_heading in">
 							<div class="block_title">
 								<h4>Группа товара</h4>
@@ -218,6 +225,18 @@
 						</div>
 					</div>
 
+					<div class="sidebar-box-mobile sorting-mobile" data-box="sorting-mobile">
+						<div class="btn-close-sidebar"></div>
+						<p>Сортровать</p>
+						<ul class="list-sorting">
+							<li><a href="#">По умолчанию</a></li>
+							<li><a href="#">Дешевые</a></li>
+							<li><a href="#">Дорогие</a></li>
+							<li><a href="#">Популярные</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+					</div>
+
 					<h3>
 						<svg class="svg-icon filter-icon">
 							<use xlink:href="img/sprite.svg#filter"></use>
@@ -225,8 +244,10 @@
 						<span>Фильтры</span>
 					</h3>
 
-					<div class="filter-wrapper">
+					<div class="filter-wrapper sidebar-box-mobile" data-box="filter-wrapper">
+						<div class="btn-close-sidebar"></div>
 						<div class="sidebar-box">
+							
 							<div class="panel_heading in">
 								<div class="block_title">
 									<h4>Цена, грн.</h4>
@@ -782,7 +803,7 @@
 							</div>
 						</div>
 
-						<div class="sidebar-box">
+						<div class="sidebar-box border-none">
 							<div class="panel_heading">
 								<div class="block_title">
 									<h4>Страна производитель</h4>
@@ -851,10 +872,18 @@
 								</div>
 							</div>
 						</div>
+
+							<a href="#" class="reset-filter">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#refresh"></use>
+								</svg>
+								<span>Сбросить все фильтры</span>
+							</a>
 					</div>
 				</div>
 
 				<div class="catalog-content">
+
 					<div class="sorting-wrapper">
 						<a href="#" class="reset-filter">
 							<svg class="svg-icon">

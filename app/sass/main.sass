@@ -1458,10 +1458,13 @@ blockquote
 .filter-wrapper
 	padding: 30px 20px 5px
 	border: solid 1px #eeeeee
+	position: relative
 	.sidebar-box
 		&:last-child
 			border: none
 			margin: 0	
+	.reset-filter
+		display: none		
 
 .menu-group-orders
 	font-size: 13px
@@ -1532,6 +1535,7 @@ blockquote
 
 .range_val
 	width: 100%
+	height: 38px
 	@include menu-wrapper
 
 .inp-group
@@ -1553,6 +1557,7 @@ blockquote
 		color: #555555
 		font-family: $font
 		padding: 0
+		line-height: 24px
 	.line
 		display: inline-block
 		margin: 0 23px
@@ -1565,7 +1570,7 @@ blockquote
 
 .ui-widget-content
 	background: rgba(#000000, .1)	
-	width: calc(100% - 28px)
+	width: calc(100% - 10px)
 	margin: 0 auto
 
 .ui-slider-horizontal
@@ -1635,6 +1640,69 @@ blockquote
 		.active
 			font-weight: bold
 			color: #333333	
+
+.filters-btn-mobile
+	width: 100%
+	display: none
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	margin: 0 0 17px
+	a
+		color: #333333
+		font-size: 18px
+		margin: 0 0 30px	
+		text-align: center
+		width: 50%
+		padding: 3px 0	
+		border-right: 1px solid #333333
+		&:first-child
+			width: 100%	
+			border: none
+		&:last-child
+			border: none
+
+.btn-close-sidebar
+	width: 18px
+	height: 18px
+	position: absolute
+	right: 16px
+	top: 16px
+	display: none
+	&:before, &:after
+		content: ''
+		position: absolute
+		width: 2px
+		height: 100%
+		left: 8px
+		top: 0
+		background: $accent
+		border-radius: 2px
+	&::before
+		transform: rotate(45deg)
+	&::after
+		transform: rotate(135deg)	
+
+.border-none
+	border: none
+
+.sorting-mobile
+	display: none
+	padding: 39px 20px 43px
+	text-align: center
+	p
+		margin: 0 auto 30px
+		font-size: 16px
+		font-weight: 600
+
+.list-sorting
+	line-height: 2.14
+	li
+		a
+			color: #333333					
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button
+	display: none
 
 @import "media"
 // Всегда в конце

@@ -205,11 +205,19 @@ $('.slider-range').slider({
 		$(".dec1").val(ui.values[0]);
 		//Поле максимального значения
 		$(".dec2").val(ui.values[1]);
-	}
+	},
 });
 
 $(".dec1").val($(".slider-range").slider("values", 0));
 $(".dec2").val($(".slider-range").slider("values", 1));
+
+// if ($(".dec1").length) {
+// 	$('.dec1').clone().appendTo('.ui-slider-handle:eq(0)');
+// }
+
+// if ($(".dec2").length) {
+// 	$('.dec2').clone().appendTo('.ui-slider-handle:eq(1)');
+// }
 
 // accordeon
 function accordeon() {
@@ -225,3 +233,16 @@ function accordeon() {
 }
 
 accordeon();
+
+// mobile filter
+$(".filters-btn-mobile a").on('click', function (e) {
+	e.preventDefault();
+	var boxClick = $(this).attr('data-box'),
+		content = $('.sidebar-box-mobile[data-box="' + boxClick + '"]');
+
+	content.fadeIn();
+});
+
+$('.btn-close-sidebar').on('click', function (e) {
+	$('.sidebar-box-mobile').fadeOut();
+});

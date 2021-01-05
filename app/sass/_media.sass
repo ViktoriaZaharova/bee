@@ -119,6 +119,12 @@
 		font-size: 13px
 		max-width: none		
 
+	.col-4
+		width: 33.3%	
+
+	.slogan
+		max-width: 400px		
+
 @media only screen and (max-width : 800px)	
 	.footer-wrapper__bottom
 		flex-direction: column
@@ -128,6 +134,10 @@
 		.header-box	
 			margin: 22px auto 30px
 
+	.col-4
+		width: 50%
+
+		
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -202,14 +212,97 @@
 	.col-2
 		width: 50%
 
-	.col-4, .checkout-form__box .col-4
+	.checkout-form__box .col-4
 		width: 100%
 
 	.input-title
 		margin: 0 0 7px
 
 	.checkout-text-line
-		margin: 31px auto 55px							
+		margin: 31px auto 55px
+
+	.catalog-content
+		width: 100%	
+		padding: 0
+
+	.slogan, .sorting-wrapper, .sidebar-box-group, .filter-wrapper
+		display: none
+
+	.filters-btn-mobile
+		display: flex
+
+	.catalog-wrapper
+		margin: 0 0 59px	
+
+	.catalog-section
+		h1
+			margin: 0 auto
+		.line-title
+			margin: 0 auto 48px	
+		.breadcrumbs
+			margin: 0 0 37px		
+
+	.col-4
+		width: 33.3%
+		
+	.section-seo
+		margin: 0 0 70px	
+
+	.sidebar
+		max-width: 100%
+		position: relative
+		h3
+			display: none
+
+	.btn-close-sidebar
+		display: flex
+
+
+	.sidebar-box-mobile
+		width: 100%
+		position: absolute
+		z-index: 2
+		left: 0
+		top: 0
+		background: #fff
+		border: solid 1px #eeeeee
+		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
+		padding: 35px 20px 30px
+		display: none
+		
+	.filter-wrapper
+		padding: 60px 20px 85px
+		.reset-filter
+			display: flex
+			justify-content: center
+			margin: 50px auto 0
+
+	.ui-widget-content
+		width: 100%
+
+	.inp-group
+		// display: none
+		padding: 0
+		justify-content: space-between
+		.line
+			display: none
+
+	// .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button
+	// 	width: 60px
+	// 	height: 24px
+	// 	text-align: center
+	// 	padding: 0
+	// 	color: #555555
+	// 	font-size: 12px
+	// 	font-family: $font
+	// 	display: flex
+	// 	align-items: center
+	// 	justify-content: center
+	// 	line-height: 24px
+	// 	left: -30px
+	// 	top: -30px
+	// 	position: absolute
+	
 
 @media only screen and (max-width : 700px)	
 	.btn-burger
@@ -347,7 +440,17 @@
 		margin: 0 15px
 
 	.checkout-order__body-item
-		padding: 0 0 0 25px						
+		padding: 0 0 0 25px
+
+	.col-4
+		width: 50%
+
+	.catalog-content
+		.col-4
+			display: none
+			&:nth-child(-n+10)
+				display: block
+												
 
 @media only screen and (max-width : 475px)
 	.form-subscribe
