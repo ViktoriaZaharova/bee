@@ -175,6 +175,14 @@ button
 		background: $text
 		color: $accent
 
+.btn-border
+	border: solid 2px #f9d251
+	background: #fff
+	color: #333333
+	&:hover
+		background: $accent
+		color: #fff
+
 .color-yellow
 	color: $accent	
 
@@ -1721,6 +1729,7 @@ blockquote
 	width: 100%
 	margin: 29px 0 0
 	position: relative
+	@include box-wrapper2
 	.box-text
 		color: #777		
 	.button-group
@@ -1798,6 +1807,10 @@ blockquote
 	@include box-wrapper
 	span
 		color: #333333
+	li
+		display: flex
+		align-items: center
+
 
 .availability-box
 	display: flex
@@ -2016,7 +2029,153 @@ blockquote
 			background: $accent	
 	.button-group
 		width: calc(100% - 163px)
-		margin: 29px 0 0 auto		
+		margin: 29px 0 0 auto	
+
+.reviews-rating-number
+	display: flex
+	align-items: center
+	color: #777777
+	margin: 0 0 0 10px
+	a
+		text-decoration: underline
+		color: #333333
+	p
+		&:after 
+			content: '/'
+			display: inline-block
+			margin: 0 5px	
+
+// reviews-product-two
+.reviews-product-two
+	.reviews-product-wrapper
+		margin: 19px 0 0
+	.reviews-product__content, .line-title
+		width: calc(100% - 538px)
+	.button-group
+		margin: 0
+
+.reviews-product__right
+	max-width: 400px
+	width: 100%	
+	margin: -30px 0 0		
+
+// reviews-box
+.reviews-box
+	padding: 0 0 35px
+	margin: 0 0 30px
+	border-bottom: 1px solid #e7e7e7
+	display: none
+	&:nth-child(-n+3)
+		display: block
+	.list-rating
+		justify-content: flex-start
+		margin: 12px 0 29px
+		width: 100%
+	.box-text
+		color: #333		
+
+.reviews-box-line
+	@include box-wrapper
+	width: 100%
+	color: #888888
+
+.vote
+	margin: 0 0 0	15px
+
+.vote, .vote-link
+	@include menu-wrapper
+
+.utility-reviews
+	@include menu-wrapper	
+
+.vote-link
+	color: #888888
+	margin: 0 21px 0 0
+	&:last-child
+		margin: 0
+	svg
+		width: 15px
+		height: 15px
+		fill: #c7c7c7
+		margin: 0 7px 0 0			
+
+.reviews-box-img
+	margin: 29px 0 0
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 200px
+	width: 140px
+	border: solid 1px #eeeeee
+	padding: 15px
+	background: #ffffff
+	img
+		max-height: 100%
+
+.product-rating
+	max-width: 340px
+	width: 100%
+	.list-rating
+		margin: 0
+		justify-content: flex-start
+		li
+			width: 30px
+			height: 30px
+			margin: 0 12px 0 0
+			&:last-child
+				margin: 0
+			svg
+				fill: #333333
+		.star-0
+			svg
+				fill: #dbdbdb		
+
+
+.product-rating__line
+	margin: 52px 0 43px
+	@include box-wrapper
+
+.product-rating__val
+	font-size: 50px
+	font-weight: 300	
+	line-height: 1
+
+.product-rating__details
+	width: 100%
+
+.product-rating__details-item
+	width: 100%
+	margin: 0 0 27px
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	color: #888888
+	font-size: 16px
+	font-weight: 600
+	&:last-child
+		margin: 0		
+
+.product-rating__details-line
+	position: relative
+	width: 280px
+	height: 4px
+	background: #ebebeb
+	border-radius: 2px
+	margin: 0 10px 0 0
+
+.product-rating__details-line-bg
+	position: absolute
+	left: 0
+	top: 0
+	height: 100%
+	border-radius: 2px
+	background: $accent
+	width: 33%		
+
+.product-rating__details-stage
+	min-width: 20px
+	text-align: center
+
 
 @import "media"
 // Всегда в конце

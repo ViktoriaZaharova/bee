@@ -197,8 +197,17 @@
 		margin: 0 0 36px
 
 	.product-section-information
-		margin: 0 0 56px		
+		margin: 0 0 56px
 
+	.reviews-product-two .reviews-product__content, .reviews-product-two .line-title
+		width: calc(100% - 440px)
+
+	.utility-reviews
+		p
+			display: none
+
+	.vote
+		margin: 0		
 
 @media only screen and (max-width : 800px)	
 	.footer-wrapper__bottom
@@ -212,7 +221,13 @@
 	.col-4
 		width: 50%
 
-		
+	.reviews-product-two .reviews-product__content, .reviews-product-two .line-title
+		width: 100%	
+
+	.reviews-product__right
+		width: 100%
+		order: -1
+		margin: 0 0 63px	
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -522,6 +537,16 @@
 	#modal-basket .button-group
 		width: 100%	
 
+	.product-rating
+		max-width: none
+
+	.product-rating__details-line
+		width: calc(100% - 70px)
+		margin: 0 auto
+
+	.product-rating__details-percent
+		min-width: 32px			
+
 @media only screen and (max-width : 475px)
 	.form-subscribe
 		max-width: 260px
@@ -574,7 +599,11 @@
 		max-width: none
 
 	.reviews-box-popup .label-file
-		margin: 0 auto 				
+		margin: 0 auto 	
+
+	.tech-info
+		li
+			margin: 0 0 5px				
 
 @media only screen and (max-width : 420px)
 	.box-subscribe
@@ -678,4 +707,6 @@
 	.modal__wrapper .checkout-order__footer
 		width: calc(100% - 70px)	
 
-		
+	.reviews-box-name
+		width: 100%
+		margin: 0 0 5px	

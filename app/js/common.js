@@ -280,3 +280,24 @@ $(".reviews-btn").on('click', function (e) {
 $('.btn-close-popup').on('click', function () {
 	$('.reviews-box-popup').fadeOut();
 });
+
+// animate scroll
+$('.go_to').on('click', function () {
+	var scroll_el = $(this).attr('href');
+	if ($(scroll_el).length != 0) {
+		$('html, body').animate({
+			scrollTop: $(scroll_el).offset().top
+		}, 500);
+	}
+	return false;
+});
+
+$('.load-more').on('click', function (e) {
+	e.preventDefault();
+	$('.reviews-box:hidden').slice(0, 3).slideDown();
+
+	var onBlock = $('.reviews-box:hidden').length;
+	if (onBlock <= 0) {
+		$('.load-more').hide();
+	}
+});
