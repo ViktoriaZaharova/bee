@@ -575,10 +575,101 @@
 					</div>
 
 					<div class="button-group">
-						<a href="#" class="btn btn-accent">Оставить отзыв</a>
+						<a href="#" class="btn btn-accent reviews-btn" data-box="modal-reviews">Оставить отзыв</a>
 
-						<a href="#" class="text-decoration color-grey">Задать вопрос о товаре</a>
+						<a href="#" class="text-decoration color-grey reviews-btn" data-box="modal-question">Задать вопрос о
+							товаре</a>
 					</div>
+
+				</div>
+				<div class="reviews-box-popup" data-box="modal-reviews">
+					<div class="btn-close-popup"></div>
+					<h3>Добавить отзыв</h3>
+
+					<form method="post" class="form">
+
+						<div class="estimate">
+							<p>Оцените товар:</p>
+							<ul class="list-estimate">
+								<li><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg></li>
+								<li><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg></li>
+								<li><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg></li>
+								<li><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg></li>
+								<li><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg></li>
+							</ul>
+						</div>
+
+						<label class="checkbox checkbox-recomended">
+							<input class="checkbox-inp" type="checkbox" name="checkbox" checked>
+							<span class="checkbox-custom"></span>
+							<span class="label">Рекомендуете к покупке</span>
+						</label>
+
+						<label>
+							<span class="input-title">Ваше имя</span>
+							<input type="text" name="name" required>
+						</label>
+
+						<label>
+							<span class="input-title">Электронная почта</span>
+							<input type="text" name="mail" required>
+						</label>
+
+						<label>
+							<span class="input-title">Текст отзыва</span>
+							<textarea name="message"></textarea>
+						</label>
+
+						<div class="button-group">
+							<label class="label-file">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#clip"></use>
+								</svg>
+								<input type="file" name="file">
+								<span class="label-file-text text-decoration">Прикрепить файл</span>
+							</label>
+							<button type="submit" class="btn btn-accent">Отправить</button>
+						</div>
+
+						<div class="moderation">Опубликуем комментарий, как только
+							он пройдет модерацию</div>
+					</form>
+				</div>
+
+
+				<div class="reviews-box-popup" data-box="modal-question">
+					<div class="btn-close-popup"></div>
+					<h3>Задать вопрос о товаре</h3>
+
+					<form method="post" class="form">
+
+						<label>
+							<span class="input-title">Ваше имя</span>
+							<input type="text" name="name" required>
+						</label>
+
+						<label>
+							<span class="input-title">Электронная почта</span>
+							<input type="text" name="mail" required>
+						</label>
+
+						<label>
+							<span class="input-title">Ваш вопрос</span>
+							<textarea name="message"></textarea>
+						</label>
+
+						<button type="submit" class="btn btn-accent">Отправить</button>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -938,6 +1029,52 @@
 			</form>
 		</div>
 	</div>
+
+<div class="modal__div" id="modal-basket">
+	<div class="modal__wrapper">
+		<div class="modal__close"></div>
+		<h2>Корзина</h2>
+
+		<div class="checkout-order__body">
+		
+			<div class="checkout-order__box">
+				<a href="product.html" class="checkout-order__photo"><img src="img/product1.png" alt=""></a>
+				<div class="checkout-order__body-item">
+					<a href="product.html" class="checkout-order__title">Молочко для тела "Питательное" для очень сухой
+						кожи</a>
+					<div class="checkout-order__manufacturer-product">Nivea Nourishing Body Milk</div>
+					<div class="checkout-order__product-value">250 ml</div>
+		
+					<div class="amount-wrapper">
+						<div class="checkout-order__price">72 ₴</div>
+						<div class="amount">
+							<span class="down"></span>
+							<input type="text" value="1" />
+							<span class="up"></span>
+						</div>
+						<div class="checkout-order__sum">144 ₴</div>
+					</div>
+				</div>
+		
+				<a href="#" class="btn-delete"></a>
+			</div>
+		</div>
+		
+		<div class="checkout-order__footer">
+			<ul class="list-total-order">
+				<li>
+					<p>Итого</p>
+					<strong class="the-sum the-sum__total">144 грн.</strong>
+				</li>
+			</ul>
+		
+			<div class="button-group">
+				<a href="#" class="text-decoration color-grey links-close-modal">Продолжить покупки</a>
+				<a href="checkout.html" class="btn btn-accent">Оформить заказ</a>
+			</div>
+		</div>
+	</div>
+</div>
 
 	<!-- Пoдлoжкa -->
 	<div class="overlay"></div>

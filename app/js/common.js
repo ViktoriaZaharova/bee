@@ -98,7 +98,7 @@ $('input[name="phone"]').mask('+38 (999) 999 - 99 - 99');
 $(function () {
 	var overlay = $('.overlay');
 	var open_modal = $('.open_modal');
-	var close = $('.modal__close, .overlay');
+	var close = $('.modal__close, .overlay, .links-close-modal');
 	var modal = $('.modal__div');
 
 	open_modal.on('click', function (event) {
@@ -121,7 +121,8 @@ $(function () {
 			});
 	});
 
-	close.on('click', function () {
+	close.on('click', function (e) {
+		e.preventDefault();
 		modal
 			.animate({
 				opacity: 0,
@@ -246,7 +247,7 @@ $(".filters-btn-mobile a").on('click', function (e) {
 	content.fadeIn();
 });
 
-$('.btn-close-sidebar').on('click', function (e) {
+$('.btn-close-sidebar').on('click', function () {
 	$('.sidebar-box-mobile').fadeOut();
 });
 
@@ -265,4 +266,17 @@ $('.product-section__photo-preview div.item').on('click', function () {
 	penImg.attr('src', imgPath);
 	linksImg.attr('href', imgPath);
 
+});
+
+// reviews box
+$(".reviews-btn").on('click', function (e) {
+	e.preventDefault();
+	var boxClick = $(this).attr('data-box'),
+		content = $('.reviews-box-popup[data-box="' + boxClick + '"]');
+
+	content.fadeIn();
+});
+
+$('.btn-close-popup').on('click', function () {
+	$('.reviews-box-popup').fadeOut();
 });

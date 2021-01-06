@@ -955,7 +955,6 @@ footer
 	&::after
 		transform: rotate(135deg)	
 	
-
 .btn-burger
 	width: 24px
 	display: none
@@ -1720,7 +1719,8 @@ blockquote
 
 .reviews-product-wrapper
 	width: 100%
-	margin: 40px 0 0
+	margin: 29px 0 0
+	position: relative
 	.box-text
 		color: #777		
 	.button-group
@@ -1756,6 +1756,7 @@ blockquote
 	justify-content: center
 	border: solid 1px #eeeeee
 	background: #fff
+	padding: 30px
 	img
 		max-height: 100%	
 
@@ -1871,7 +1872,8 @@ blockquote
 	width: 100%
 	@include box-wrapper
 	.amount-wrapper
-		width: auto		
+		width: auto	
+		margin: 0	
 
 .links-info
 	font-weight: 600
@@ -1895,6 +1897,123 @@ blockquote
 	width: calc(100% - 730px)
 	padding: 0 0 0 80px			
 
+
+.reviews-box-popup
+	display: none
+	position: absolute
+	right: 0
+	top: -20px
+	background: #fff
+	z-index: 2
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+	max-width: 400px
+	width: 100%
+	padding: 16px 25px 32px
+	h3
+		font-size: 24px
+		margin: 0 0 36px
+	.button-group	
+		button
+			max-width: 160px
+			margin: 0 0 0 auto
+	.label-file
+		margin: 0		
+	button
+		max-width: 160px	
+
+.btn-close-popup
+	width: 16px
+	height: 16px
+	position: relative
+	margin: 0 -8px 12px auto
+	cursor: pointer
+	&:before, &:after
+		content: ''
+		position: absolute
+		width: 1px
+		height: 100%
+		left: 8px
+		top: 0
+		background: #000
+		opacity: 0.2
+	&::before
+		transform: rotate(45deg)
+	&::after
+		transform: rotate(135deg)		
+
+.estimate
+	width: 100%
+	margin: 0 0 20px
+	@include menu-wrapper
+
+.list-estimate	
+	margin: 0 0 0 9px
+	@include menu-wrapper
+	li
+		width: 15px
+		height: 15px
+		margin: 0 5px 0 0
+		cursor: pointer
+		&:last-child
+			margin: 0
+		svg
+			fill: #dbdbdb
+		&:hover, &:focus
+			svg
+				fill: $accent	
+
+.checkbox-recomended
+	font-size: 14px
+	margin: 0 0 24px
+	.checkbox-custom
+		width: 20px
+		height: 20px
+		min-width: 20px
+	.checkbox-inp:checked + .checkbox-custom::before
+		background: url('../img/check.svg') no-repeat center
+			size: 100%
+		width: 12px
+		height: 9px	
+
+.moderation
+	margin: 22px 0 0
+	max-width: 238px
+	width: 100%
+	color: #474747
+	font-size: 12px
+
+.label-file
+	margin: 0
+	width: auto
+	display: flex
+	align-items: center
+	cursor: pointer
+	input
+		display: none
+	.svg-icon
+		fill: $accent
+		margin: 0 5px 0 0
+		width: 18px
+		height: 22px
+
+#modal-basket
+	max-width: 620px
+	.modal__wrapper
+		padding: 30px 30px 34px
+	h2
+		font-size: 20px
+		font-weight: normal
+		margin: 0 auto
+		padding: 0 0 26px
+		border-bottom: 1px solid #e7e7e7
+	.modal__close
+		opacity: 1
+		right: 30px
+		top: 32px
+		position: absolute
+		
+		&:before, &:after
+			background: $accent	
 
 @import "media"
 // Всегда в конце

@@ -31,6 +31,16 @@
 	.checkout-order__footer
 		width: 100%	
 
+	.product-section__content, .product-section-information__box-right
+		padding: 0 0 0 30px
+		width: calc(100% - 630px)
+
+	.product-section__photo, .product-section-information__box
+		max-width: 630px	
+
+	.product-section__photo-max
+		max-width: 480px		
+
 @media only screen and (max-width : 1200px)	
 	.brands-section
 		margin: 70px 0
@@ -53,6 +63,25 @@
 	.header-bottom	
 		padding: 13px 0 14px
 
+	.product-section__photo, .product-section-information__box
+		max-width: 460px
+
+	.product-section__photo-max
+		max-width: none
+		height: 460px
+		margin: 0 auto 10px
+
+	.product-section__photo-preview
+		order: 1
+		width: 100%
+		@include box-wrapper2
+		.item
+			margin: 0 0 5px
+			width: 107px
+			height: 107px
+
+	.product-section__content, .product-section-information__box-right
+		width: calc(100% - 460px)
 
 @media only screen and (max-width : 992px)
 	.footer-wrapper__bottom
@@ -124,6 +153,48 @@
 
 	.slogan
 		max-width: 400px		
+
+	.product-section-information__box
+		max-width: none	
+
+	.product-section__photo
+		margin: 0 auto	
+		.list-tags
+			display: none
+
+	.product-section__content, .product-section-information__box-right
+		width: 100%
+		padding: 0	
+
+	.product-section__content
+		margin: 0 0 56px
+		h1, .tech-info
+			display: none	
+		
+
+	.line-mobile
+		@include box-wrapper	
+
+	.tech-info
+		border: none
+		padding: 35px 0 40px
+
+	.product-section
+		.breadcrumbs
+			margin: 0 0 48px
+			
+	.product-section__content-box
+		padding: 50px 0 0
+
+	.purchase-info__bottom
+		margin: 41px 0 31px	
+
+	.product-section-information__box
+		margin: 0 0 36px
+
+	.product-section-information
+		margin: 0 0 56px		
+
 
 @media only screen and (max-width : 800px)	
 	.footer-wrapper__bottom
@@ -281,28 +352,11 @@
 		width: 100%
 
 	.inp-group
-		// display: none
 		padding: 0
 		justify-content: space-between
 		.line
 			display: none
 
-	// .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button
-	// 	width: 60px
-	// 	height: 24px
-	// 	text-align: center
-	// 	padding: 0
-	// 	color: #555555
-	// 	font-size: 12px
-	// 	font-family: $font
-	// 	display: flex
-	// 	align-items: center
-	// 	justify-content: center
-	// 	line-height: 24px
-	// 	left: -30px
-	// 	top: -30px
-	// 	position: absolute
-	
 
 @media only screen and (max-width : 700px)	
 	.btn-burger
@@ -451,6 +505,11 @@
 			&:nth-child(-n+10)
 				display: block
 												
+	.reviews-product
+		margin: 0 0 70px
+
+	.line-title
+		padding: 0 0 14px	
 
 @media only screen and (max-width : 475px)
 	.form-subscribe
@@ -466,6 +525,9 @@
 	.products-slider .slick-dots
 		bottom: 30px	
 		
+	.product-section__photo-preview .item
+		width: 80px
+		height: 80px
 
 @media only screen and (max-width : 440px)		
 	.checkout-order__photo
@@ -479,6 +541,26 @@
 
 	.amount
 		margin: 0 10px	
+
+	.purchase-info
+		margin: 30px 0 0
+		width: 100%
+		align-items: flex-start	
+
+	#modal-basket .modal__wrapper
+		padding: 30px 20px 34px	
+
+	.reviews-product-wrapper .button-group
+		flex-direction: column
+		align-items: center
+		button
+			margin: 10px auto 0
+
+	.moderation
+		max-width: none
+
+	.reviews-box-popup .label-file
+		margin: 0 auto 				
 
 @media only screen and (max-width : 420px)
 	.box-subscribe
@@ -501,6 +583,21 @@
 
 	.consent
 		padding: 0 0 0 15px	
+
+	.reviews-product-wrapper 
+		.button-group
+			flex-direction: column
+			align-items: flex-start
+		.btn	
+			margin: 0 auto 10px 0
+
+	.purchase-info__bottom
+		flex-direction: column
+		align-items: flex-start
+		.amount-wrapper
+			margin: 0 0 20px
+			width: 100%
+
 
 @media only screen and (max-width : 360px)
 	.footer-menu
@@ -545,4 +642,21 @@
 		width: 100%
 		padding: 0
 		margin: 20px auto 0	
-		text-align: center							
+		text-align: center	
+
+	.modal__wrapper
+		.checkout-order__footer
+			.button-group						
+				flex-direction: column
+				align-items: center
+
+	.links-close-modal
+		margin: 0 auto 10px				
+
+	.product-section__photo-max
+		height: 400px
+
+	.product-section__photo-preview .item
+		padding: 10px
+		width: 70px
+		height: 70px
