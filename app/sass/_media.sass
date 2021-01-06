@@ -39,7 +39,11 @@
 		max-width: 630px	
 
 	.product-section__photo-max
-		max-width: 480px		
+		max-width: 480px	
+
+	.modal__wrapper
+		.checkout-order__footer
+			width: calc(100% - 163px)		
 
 @media only screen and (max-width : 1200px)	
 	.brands-section
@@ -511,6 +515,13 @@
 	.line-title
 		padding: 0 0 14px	
 
+	.reviews-box-popup
+		max-width: none
+		top: 10px	
+
+	#modal-basket .button-group
+		width: 100%	
+
 @media only screen and (max-width : 475px)
 	.form-subscribe
 		max-width: 260px
@@ -538,6 +549,9 @@
 	.checkout-order__body-item
 		width: calc(100% - 80px)	
 		padding: 0 0 0 15px
+
+	.modal__wrapper .checkout-order__footer
+		width: calc(100% - 95px)
 
 	.amount
 		margin: 0 10px	
@@ -651,7 +665,7 @@
 				align-items: center
 
 	.links-close-modal
-		margin: 0 auto 10px				
+		font-size: 10px			
 
 	.product-section__photo-max
 		height: 400px
@@ -660,3 +674,8 @@
 		padding: 10px
 		width: 70px
 		height: 70px
+
+	.modal__wrapper .checkout-order__footer
+		width: calc(100% - 70px)	
+
+		
