@@ -211,13 +211,16 @@ $('.slider-range').slider({
 $(".dec1").val($(".slider-range").slider("values", 0));
 $(".dec2").val($(".slider-range").slider("values", 1));
 
-// if ($(".dec1").length) {
-// 	$('.dec1').clone().appendTo('.ui-slider-handle:eq(0)');
-// }
+// mobile box product
+if ($(".product-section__content h1").length) {
+	$('.product-section__content h1').clone().appendTo('.line-mobile');
+}
 
-// if ($(".dec2").length) {
-// 	$('.dec2').clone().appendTo('.ui-slider-handle:eq(1)');
-// }
+if ($(".tech-info").length) {
+	$('.tech-info').clone().appendTo('.line-mobile');
+}
+
+
 
 // accordeon
 function accordeon() {
@@ -245,4 +248,21 @@ $(".filters-btn-mobile a").on('click', function (e) {
 
 $('.btn-close-sidebar').on('click', function (e) {
 	$('.sidebar-box-mobile').fadeOut();
+});
+
+// min img click
+var srcValue = $('.product-section__photo-max img').attr('src');
+var penImg = $('.product-section__photo-max img');
+var linksImg = $('.product-section__photo-max');
+
+$('.product-section__photo-preview div.item').on('click', function () {
+	$('.product-section__photo-preview div.item').removeClass('click-item');
+	$(this).addClass('click-item');
+	var imgPath;
+
+	imgPath = $(this).attr('data-img-path');
+
+	penImg.attr('src', imgPath);
+	linksImg.attr('href', imgPath);
+
 });

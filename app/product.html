@@ -22,7 +22,7 @@
 
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -181,82 +181,173 @@
 
 	</header>
 
-	<main class="main-home">
+	<section class="wrapper product-section">
 		<div class="container">
-			<div class="home-main__slider w-100">
-				<div class="slide">
-					<div class="main-home__content">
-						<h3>Winter Sale</h3>
-						<div class="main-home__sales">
-							<div class="main-home__sales-before">До</div>
-							<div class="main-home__sales-value">
-								40 <span class="main-home__sales-percent">%</span>
-							</div>
-						</div>
-						<p>На косметику для него!</p>
-						<a href="#" class="btn btn-accent">Узнать больше</a>
+			<ul class="breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Уход</a></li>
+				<li><a href="#">Уход за телом</a></li>
+				<li><span>Молочко для тела "Питательное" для очень сухой кожи</span></li>
+			</ul>
+
+			<div class="line-mobile w-100"></div>
+
+			<div class="product-section-wrapper">
+				<div class="product-section__photo">
+					<ul class="list-tags">
+						<li class="bg-accent">Новинка</li>
+						<li class="bg-light-grey">скидка – 15%</li>
+					</ul>
+
+					<div class="product-section__photo-preview">
+						<div class="item click-item" data-img-path="img/product1.png"><img src="img/product1.png" alt=""></div>
+						<div class="item" data-img-path="img/product2.png"><img src="img/product2.png" alt=""></div>
+						<div class="item" data-img-path="img/product1.png"><img src="img/product1.png" alt=""></div>
+						<div class="item" data-img-path="img/product1.png"><img src="img/product1.png" alt=""></div>
 					</div>
 
+					<a href="img/product1.png" class="product-section__photo-max" data-fancybox="image">
+						<img src="img/product1.png" alt="">
+					</a>
 				</div>
 
-				<div class="slide">
+				<div class="product-section__content">
+					<h1>Молочко для тела "Питательное"
+						для очень сухой кожи</h1>
 
-					<div class="main-home__content">
-						<h3>Winter Sale</h3>
-						<div class="main-home__sales">
-							<div class="main-home__sales-before">До</div>
-							<div class="main-home__sales-value">
-								40 <span class="main-home__sales-percent">%</span>
+					<ul class="tech-info">
+						<li>
+							<p>Артикул: <span>47837</span></p>
+						</li>
+						<li class="text-decoration">
+							<p>0 отзывов</p>
+						</li>
+						<li>
+							<div class="availability-box">
+								<span class="availability-box__icon bg-green">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#checkbox"></use>
+									</svg>
+								</span>
+								<p>В наличии</p>
 							</div>
+						</li>
+					</ul>
+
+					<div class="product-section__content-box">
+						<ul class="list-characteristics">
+							<li>
+								<p>Возраст: </p>
+								<span>18+</span>
+							</li>
+							<li>
+								<p>Время применения: </p>
+								<span>универсальный</span>
+							</li>
+							<li>
+								<p>Классификация: </p>
+								<span>масс маркет</span>
+							</li>
+							<li>
+								<p>Назначение: </p>
+								<span>увлажнение</span>
+							</li>
+							<li>
+								<p>Пол: </p>
+								<span>для женщин</span>
+							</li>
+							<li>
+								<p>Объем: </p>
+								<span>250ml</span>
+							</li>
+
+							<li>
+								<p>Сделано в: </p>
+								<span>Германия</span>
+							</li>
+
+							<li>
+								<p>Страна ТМ:</p>
+								<span>Германия</span>
+							</li>
+						</ul>
+
+						<div class="purchase-info">
+							<div class="price-wrapper">
+								<div class="old-price">87 грн.</div>
+								<div class="new-price">72 <span>грн.</span></div>
+							</div>
+
+							<ul class="list-val-product">
+								<li class="active">250 ml</li>
+								<li>400 ml</li>
+							</ul>
 						</div>
-						<p>На косметику для него!</p>
-						<a href="#" class="btn btn-accent">Узнать больше</a>
 					</div>
 
-				</div>
-
-				<div class="slide">
-
-					<div class="main-home__content">
-						<h3>Winter Sale</h3>
-						<div class="main-home__sales">
-							<div class="main-home__sales-before">До</div>
-							<div class="main-home__sales-value">
-								40 <span class="main-home__sales-percent">%</span>
+					<div class="purchase-info__bottom">
+						<div class="amount-wrapper">
+							<div class="checkout-order__price">72 ₴</div>
+							<div class="amount">
+								<span class="down"></span>
+								<input type="text" value="1" />
+								<span class="up"></span>
 							</div>
+							<div class="checkout-order__sum">144 ₴</div>
 						</div>
-						<p>На косметику для него!</p>
-						<a href="#" class="btn btn-accent">Узнать больше</a>
+
+						<a href="#modal-basket" class="btn btn-accent open_modal">В корзину</a>
 					</div>
 
+					<a href="#" class="links-info color-yellow text-decoration">Информация о доставке</a>
+				</div>
+			</div>
+
+
+	</section>
+
+	<section class="product-section-information">
+		<div class="container">
+			<div class="product-section-information__box">
+				<div class="line-title">
+					<h2>Описание товара</h2>
 				</div>
 
-				<div class="slide">
-
-					<div class="main-home__content">
-						<h3>Winter Sale</h3>
-						<div class="main-home__sales">
-							<div class="main-home__sales-before">До</div>
-							<div class="main-home__sales-value">
-								40 <span class="main-home__sales-percent">%</span>
-							</div>
-						</div>
-						<p>На косметику для него!</p>
-						<a href="#" class="btn btn-accent">Узнать больше</a>
-					</div>
-
+				<div class="box-text">
+					<p>Это шикарный косметический продукт от Nivea, который становиться настоящим спасением для сухой и
+						обезвоженной кожи.
+						Обладая нежнейшей консистенцией и особым составом, молочко приятно ложится на кожный покров и мгновенно
+						дарит ему
+						комфорт, обеспечивает длительный уход.Высокоэффективное Nourishing Body Milk предназначено для завершающего
+						этапа
+						утреннего или вечернего ухода макияжа, после бодрящего душа или теплой ванны сухой коже необходим особый
+						уход.
+						Косметическая формула разработана на основе мощных увлажняющих компонентов с применением новой технологии
+						Hydra IQ.</p>
 				</div>
+			</div>
 
+			<div class="product-section-information__box-right">
+				<h3>Информация о составе</h3>
+
+				<div class="box-text">
+					<p>Aqua, Paraffinum Liquidum, Isohexadecane, Glycerin, Isopropyl Palmitate, Cera Microcristallina, PEG-40
+						Sorbitan
+						Perisostearate, Polyglyceryl-3 Diisostearate, Prunus Amygdalus Dulcis Oil, Glyceryl Glucoside, Maris Sal,
+						Magnesium
+						Sulfate, Sodium Citrate, Citric Acid, Potassium Sorbate, Linalool, Limonene, Benzyl Alcohol, Geraniol,
+						Citronellol,
+						Butylphenyl Methylpropional, Alpha-Isomethyl Ionone,Parfum.</p>
+				</div>
 			</div>
 		</div>
-	</main>
+	</section>
 
 	<section class="section-news">
 		<div class="container">
 			<div class="line-title">
-				<h2>Новинки</h2>
-
-				<a href="catalog.html" class="color-light-grey text-decoration">Все новинки</a>
+				<h2>Товары этой же серии</h2>
 			</div>
 
 			<div class="products-slider section-news__slider w-100">
@@ -471,236 +562,33 @@
 		</div>
 	</section>
 
-	<section class="section-news section-sales">
+	<section class="reviews-product">
 		<div class="container">
 			<div class="line-title">
-				<h2>Акции</h2>
-
-				<a href="#" class="color-light-grey text-decoration">Все акции</a>
+				<h2>Отзывы о товаре</h2>
 			</div>
 
-			<div class="products-slider section-news__slider w-100">
-				<div class="slide">
-					<div class="card">
-						<ul class="list-tags">
-							<li class="bg-accent">Акция</li>
-							<li class="bg-light-grey">скидка – 15%</li>
-						</ul>
-						<a href="product.html" class="card-img"><img src="img/product6.png" alt=""></a>
-						<div class="card-body">
-							<ul class="list-rating">
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li class="star-0"><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-							</ul>
-							<a href="product.html" class="card-title">Гель для бритья для чувствительной кожи</a>
-							<div class="price-wrapper">
-								<div class="old-price">676 грн.</div>
-								<div class="new-price">476 грн.</div>
-							</div>
-							<a href="#" class="btn btn-accent">В корзину</a>
-						</div>
+			<div class="reviews-product-wrapper">
+				<div class="reviews-product__content">
+					<div class="box-text">
+						<p>Пока нет отзывов о данном товаре. Будьте первым!</p>
 					</div>
-				</div>
 
-				<div class="slide">
-					<div class="card">
-						<ul class="list-tags">
-							<li class="bg-accent">Акция</li>
-							<li class="bg-light-grey">скидка – 25%</li>
-						</ul>
-						<a href="product.html" class="card-img"><img src="img/product7.png" alt=""></a>
-						<div class="card-body">
-							<ul class="list-rating">
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-							</ul>
-							<a href="product.html" class="card-title">Крем-гель для интимной гигиены
-								с молочной кислотой</a>
-							<div class="price-wrapper">
-								<div class="old-price">105 грн.</div>
-								<div class="new-price">85 грн.</div>
-							</div>
-							<a href="#" class="btn btn-accent">В корзину</a>
-						</div>
-					</div>
-				</div>
+					<div class="button-group">
+						<a href="#" class="btn btn-accent">Оставить отзыв</a>
 
-				<div class="slide">
-					<div class="card">
-						<ul class="list-tags">
-							<li class="bg-accent">Акция</li>
-							<li class="bg-light-grey">скидка – 20%</li>
-						</ul>
-						<a href="product.html" class="card-img"><img src="img/product8.png" alt=""></a>
-						<div class="card-body">
-							<ul class="list-rating">
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-							</ul>
-							<a href="product.html" class="card-title">Гель-крем для душа
-								"Масло какао"</a>
-							<div class="price-wrapper">
-								<div class="old-price">60 грн.</div>
-								<div class="new-price">52 грн.</div>
-							</div>
-							<a href="#" class="btn btn-accent">В корзину</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="slide">
-					<div class="card">
-						<ul class="list-tags">
-							<li class="bg-accent">Акция</li>
-							<li class="bg-light-grey">скидка – 15%</li>
-						</ul>
-						<a href="product.html" class="card-img"><img src="img/product9.png" alt=""></a>
-						<div class="card-body">
-							<ul class="list-rating">
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-							</ul>
-							<a href="product.html" class="card-title">Масло для массажа "Антицеллюлитное"</a>
-							<div class="price-wrapper">
-								<div class="old-price">240 грн.</div>
-								<div class="new-price">200 грн.</div>
-							</div>
-							<a href="#" class="btn btn-accent">В корзину</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="slide">
-					<div class="card">
-						<ul class="list-tags">
-							<li class="bg-accent">Акция</li>
-							<li class="bg-light-grey">скидка – 10%</li>
-						</ul>
-						<a href="product.html" class="card-img"><img src="img/product10.png" alt=""></a>
-						<div class="card-body">
-							<ul class="list-rating">
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-							</ul>
-							<a href="product.html" class="card-title">Бронзирующий увлажняющий лосьон для тела</a>
-							<div class="price-wrapper">
-								<div class="old-price">131 грн.</div>
-								<div class="new-price">116 грн.</div>
-							</div>
-							<a href="#" class="btn btn-accent">В корзину</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="slide">
-					<div class="card">
-						<ul class="list-tags">
-							<li class="bg-accent">Акция</li>
-							<li class="bg-light-grey">скидка – 15%</li>
-						</ul>
-						<a href="product.html" class="card-img"><img src="img/product1.png" alt=""></a>
-						<div class="card-body">
-							<ul class="list-rating">
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-								<li class="star-0"><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#star"></use>
-									</svg></li>
-							</ul>
-							<a href="product.html" class="card-title">Молочко для тела "Питательное" для очень сухой кожи</a>
-							<div class="price-wrapper">
-								<div class="old-price">87 грн.</div>
-								<div class="new-price">72 грн.</div>
-							</div>
-							<a href="#" class="btn btn-accent">В корзину</a>
-						</div>
+						<a href="#" class="text-decoration color-grey">Задать вопрос о товаре</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+
 	<section class="section-news section-bestsellers">
 		<div class="container">
 			<div class="line-title">
-				<h2>Бестселлеры</h2>
-
-				<a href="#" class="color-light-grey text-decoration">Все бестселлеры</a>
+				<h2>Вы недавно просматривали</h2>
 			</div>
 
 			<div class="products-slider section-news__slider w-100">
@@ -906,109 +794,6 @@
 		</div>
 	</section>
 
-	<section class="section-about">
-		<div class="container">
-			<div class="section-about__box">
-				<h2>Интернет-магазин бытовой химии “Бджілка”</h2>
-
-				<div class="box-text">
-					<p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности представляет собой
-						интересный
-						эксперимент проверки системы обучения кадров, соответствует насущным потребностям.</p>
-					<p>Реализация намеченных плановых заданий влечет за собой процесс внедрения
-						и модернизации соответствующий условий активизации. Идейные соображения высшего порядка, а также рамки и
-						место
-						обучения
-						кадров играет важную роль в формировании дальнейших направлений развития деятельности.</p>
-				</div>
-
-				<h3>Подзаголовок третьего уровня</h3>
-				<div class="box-text">
-					<p>Таким образом новая модель организационной деятельности позволяет оценить значение дальнейших направлений
-						развития.
-						Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности представляет собой интересный
-						эксперимент
-						проверки форм развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий
-						влечет
-						за
-						собой процесс внедрения и модернизации новых предложений.</p>
-
-					<p>С другой стороны реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие
-						в
-						формировании форм развития. Равным образом консультация с широким активом способствует подготовки и
-						реализации форм
-						развития. Равным образом сложившаяся структура организации способствует подготовки и реализации
-						соответствующий
-						условий
-						активизации.</p>
-				</div>
-			</div>
-
-			<div class="section-about__box">
-				<h4>Пример выделения обычного текста</h4>
-
-				<div class="box-text">
-					<p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности представляет собой
-						интересный
-						эксперимент проверки системы обучения кадров, соответствует насущным потребностям.</p>
-				</div>
-
-				<ul class="list-dots">
-					<li>Пункт маркированного списка:</li>
-					<li>Пункт маркированного списка:</li>
-					<li>Пункт маркированного списка:</li>
-					<li>Пункт маркированного списка:</li>
-					<li>Пункт маркированного списка:</li>
-					<li>Пункт маркированного списка.</li>
-				</ul>
-				<div class="box-text">
-					<p>Таким образом новая модель организационной деятельности позволяет оценить значение дальнейших направлений
-						развития.
-						Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности представляет собой интересный
-						эксперимент
-						проверки форм развития.</p>
-
-					<p>Идейные соображения высшего порядка, а также реализация намеченных плановых заданий влечет за собой процесс
-						внедрения и
-						модернизации новых предложений. Таким образом начало повседневной работы по формированию позиции
-						обеспечивает широкому
-						кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
-						С другой
-						стороны реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в
-						формировании форм
-						развития.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="brands-section">
-		<div class="container">
-			<div class="brands-slider w-100">
-				<div class="slide">
-					<div class="brands-slider__box"><img src="img/gillette.png" alt=""></div>
-				</div>
-				<div class="slide">
-					<div class="brands-slider__box"><img src="img/losk.png" alt=""></div>
-				</div>
-				<div class="slide">
-					<div class="brands-slider__box"><img src="img/venus.png" alt=""></div>
-				</div>
-				<div class="slide">
-					<div class="brands-slider__box"><img src="img/nivea.png" alt=""></div>
-				</div>
-				<div class="slide">
-					<div class="brands-slider__box"><img src="img/dove.png" alt=""></div>
-				</div>
-				<div class="slide">
-					<div class="brands-slider__box"><img src="img/fairy.png" alt=""></div>
-				</div>
-				<div class="slide">
-					<div class="brands-slider__box"><img src="img/losk.png" alt=""></div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<footer>
 		<div class="footer-wrapper">
